@@ -12,11 +12,11 @@
     scoreboard players set @s 1JM.IaiTime 3
 
 # 抜刀する
-    data modify storage api: Argument.ID set value 2003
-    function api:sacred_treasure/give/from_id
+    playsound block.beacon.activate player @a ~ ~ ~ 1 2
     scoreboard players set @s 1JM.ChargeTime 200
     scoreboard players set @s 1JM.CoolTime 300
-    playsound block.beacon.activate player @a ~ ~ ~ 1 2
+    data modify storage api: Argument.ID set value 2003
+    function api:sacred_treasure/give/from_id
 
 # ループ起動
     function asset:sacred_treasure/2002.blazing_thunder_sheathed/trigger/schedule_loop
