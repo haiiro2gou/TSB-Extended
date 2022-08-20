@@ -6,6 +6,7 @@
 
 #> 定義類はここに
 # @within function
-#   asset:sacred_treasure/2002.blazing_thunder_sheathed/trigger/**
+#   asset:sacred_treasure/2002.blazing_thunder_drawn/trigger/**
 #   asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/**
     scoreboard objectives add 1JN.CoolTime dummy
+    scoreboard objectives add 1JN.Equipped dummy

@@ -16,7 +16,7 @@
 # 抜刀
     execute as @a[scores={1JM.ChargeTime=1..}] at @s run scoreboard players remove @s 1JM.ChargeTime 1
     execute as @a[scores={1JM.ChargeTime=1..}] at @s run particle dust 1 1 0 1 ~ ~0.4 ~ 0.7 0.7 0.7 0 7
-    execute as @a[scores={1JM.ChargeTime=..0}] at @s unless score @s 1JN.CoolTime matches 1.. run function asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/3.main
+    execute as @a[scores={1JM.ChargeTime=..0}] at @s run function asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/sheath/
 
 # CT
     execute as @a[scores={1JM.CoolTime=1..}] at @s run scoreboard players remove @s 1JM.CoolTime 1

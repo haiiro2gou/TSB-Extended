@@ -3,12 +3,12 @@
 
 #> score_holder
 # @within function asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/**
-    #declare score_holder $RandomDamage
     #declare score_holder $201
     #declare score_holder $Fluctuation
+    #declare score_holder $RandomDamage
 
 #> tag
-# @within function
-#   asset:sacred_treasure/2002.blazing_thunder_sheathed/trigger/**
-#   asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/**
-    #declare tag 1JN.Sheath
+# @within function asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/**
+    #declare tag 1JN.DisEquip
+    #declare tag 1JN.Equip
+    #declare tag 1JN.SheathCD
