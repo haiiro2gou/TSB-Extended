@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:sacred_treasure Name set value '[{"text":"跳躍","color":"green","italic":false},{"text":"のチャーム","color":"white","italic":false}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:sacred_treasure Lore set value ['{"text":"装備時跳躍力が上昇する。"}']
+    data modify storage asset:sacred_treasure Lore set value ['{"text":"装備時跳躍力が上昇する。"}','{"text":"\\"打開の糸口は上にある。\\"","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:sacred_treasure CostText set value
 # 使用回数 (int) (オプション)
