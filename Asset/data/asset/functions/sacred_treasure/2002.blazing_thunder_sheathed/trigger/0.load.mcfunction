@@ -11,3 +11,4 @@
     scoreboard objectives add 1JM.ChargeTime dummy
     scoreboard objectives add 1JM.CoolTime dummy
     scoreboard objectives add 1JM.IaiTime dummy
+    scoreboard objectives add 1JM.UserID dummy
