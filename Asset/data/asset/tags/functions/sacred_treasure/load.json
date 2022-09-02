@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:sacred_treasure/2005.levin_flood_drawn/trigger/0.load",
+        "asset:sacred_treasure/2004.levin_flood_sheathed/trigger/0.load",
         "asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/0.load",
         "asset:sacred_treasure/2002.blazing_thunder_sheathed/trigger/0.load",
         "asset:sacred_treasure/0985.ark_of_the_sanctuary/trigger/0.load",
