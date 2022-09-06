@@ -11,3 +11,5 @@
     #declare tag 1JS.Main
     #declare tag 1JS.Off
     #declare tag 1JS.OffLoop
+    #declare tag 1JS.Landing
+    #declare tag 1JS.LandingTarget

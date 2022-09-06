@@ -22,3 +22,8 @@
     execute as @s[tag=1JS.Double] run function asset:sacred_treasure/2008.desert_eagle/trigger/double/
     execute as @s[tag=1JS.Main] run function asset:sacred_treasure/2008.desert_eagle/trigger/mainhand/
     execute as @s[tag=1JS.Off] run function asset:sacred_treasure/2008.desert_eagle/trigger/offhand/
+
+# 演出
+    tp @s ~ ~ ~ ~ ~-5
+    playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 2
+    playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 1.8
