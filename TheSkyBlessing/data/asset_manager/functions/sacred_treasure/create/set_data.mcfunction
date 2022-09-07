@@ -21,7 +21,7 @@
 #       SpecialCooldown : int
 #       CanUsedGod : God[]
 #       CustomNBT : Item.tag
-# @within function asset:sacred_treasure/common/give
+# @within function asset:sacred_treasure/common/give*
 
 #> Private
 # @private

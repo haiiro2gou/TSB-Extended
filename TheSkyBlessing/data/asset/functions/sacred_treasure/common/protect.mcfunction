@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:sacred_treasure/common/give
+# @within function asset:sacred_treasure/common/give*
 
 data modify entity @s Glowing set value true
 data modify entity @s NoGravity set value true
