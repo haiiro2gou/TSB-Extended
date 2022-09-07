@@ -4,7 +4,7 @@
 #
 # @within function
 #   api:mob/summon
-#   api:sacred_treasure/*/from_id
+#   api:sacred_treasure/*/from_id*
 #   asset_manager:mob/triggers/death/manual
 #   api:spawner/subtract_hp
 
