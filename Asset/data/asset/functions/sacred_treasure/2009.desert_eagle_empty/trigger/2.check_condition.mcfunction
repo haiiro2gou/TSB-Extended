@@ -6,7 +6,7 @@
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     execute as @s[tag=1JT.Main] run function asset:sacred_treasure/common/check_condition/mainhand
-    # execute as @s[tag=1JT.Off] run function asset:sacred_treasure/common/check_condition/offhand
+    execute as @s[tag=1JT.Off] run function asset:sacred_treasure/common/check_condition/offhand
 # 他にアイテム等確認する場合はここに書く
     # 火薬の所持チェック
         execute store result score $1JT.GunpowderCount Temporary run clear @s gunpowder 0

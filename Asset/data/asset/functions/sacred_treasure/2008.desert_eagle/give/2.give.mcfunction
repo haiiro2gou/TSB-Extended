@@ -47,7 +47,7 @@
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:sacred_treasure SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:sacred_treasure DisableCooldownMessage set value
+    data modify storage asset:sacred_treasure DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:sacred_treasure DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
@@ -56,4 +56,5 @@
     # data modify storage asset:sacred_treasure CustomNBT set value {}
 
 # 神器の入手用function
-    function asset:sacred_treasure/common/give
+    execute as @s[tag=!Offhand] run function asset:sacred_treasure/common/give
+    execute as @s[tag=Offhand] run function asset:sacred_treasure/common/give_off

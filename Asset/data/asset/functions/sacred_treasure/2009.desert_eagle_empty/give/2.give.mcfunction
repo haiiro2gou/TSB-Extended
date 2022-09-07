@@ -56,4 +56,5 @@
     # data modify storage asset:sacred_treasure CustomNBT set value {}
 
 # 神器の入手用function
-    function asset:sacred_treasure/common/give
+    execute as @s[tag=!Offhand] run function asset:sacred_treasure/common/give
+    execute as @s[tag=Offhand] run function asset:sacred_treasure/common/give_off

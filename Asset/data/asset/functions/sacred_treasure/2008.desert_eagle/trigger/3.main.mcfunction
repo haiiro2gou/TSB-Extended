@@ -16,7 +16,7 @@
     execute as @s[tag=!1JS.Off] unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 2009
     execute as @s[tag=!1JS.Off] unless data storage asset:context Items.mainhand.id run function api:sacred_treasure/give/from_id
     execute as @s[tag=1JS.Off] unless data storage asset:context Items.offhand.id run data modify storage api: Argument.ID set value 2009
-    execute as @s[tag=1JS.Off] unless data storage asset:context Items.offhand.id run function api:sacred_treasure/give/from_id
+    execute as @s[tag=1JS.Off] unless data storage asset:context Items.offhand.id run function api:sacred_treasure/give/from_id_off
 
 # 左右分岐
     execute as @s[tag=1JS.Double] run function asset:sacred_treasure/2008.desert_eagle/trigger/double/
