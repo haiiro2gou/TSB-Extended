@@ -2,6 +2,7 @@
     "values": [
         "asset:sacred_treasure/2005.levin_flood_drawn/trigger/0.load",
         "asset:sacred_treasure/2004.levin_flood_sheathed/trigger/0.load",
+        "asset:sacred_treasure/2008.desert_eagle/trigger/0.load",
         "asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/0.load",
         "asset:sacred_treasure/2002.blazing_thunder_sheathed/trigger/0.load",
         "asset:sacred_treasure/0985.ark_of_the_sanctuary/trigger/0.load",
@@ -10,7 +11,7 @@
         "asset:sacred_treasure/0190.amor_wand/trigger/0.load",
         "asset:sacred_treasure/0976.brave_sword/trigger/0.load",
         "asset:sacred_treasure/0953.meteor_rain/trigger/0.load",
-        "asset:sacred_treasure/0981.soufire_shoot/trigger/0.load",
+        "asset:sacred_treasure/0981.soulfire_burst/trigger/0.load",
         "asset:sacred_treasure/0973.call_rod_spirit/trigger/0.load",
         "asset:sacred_treasure/0233.reversal/trigger/0.load",
         "asset:sacred_treasure/0172.icicle/trigger/0.load",
