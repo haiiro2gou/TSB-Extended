@@ -20,4 +20,4 @@
     function lib:damage/reset
 
 # マナ減少
-    execute as @a[gamemode=!creative,gamemode=!spectator,distance=..2] run function asset:mob/0185.tutankhamen/tick/thunder/mp_reduce
+    execute as @a[gamemode=!creative,gamemode=!spectator,distance=..2] run function asset:mob/0185.tutankhamen/tick/thunder/08.mp_reduce
