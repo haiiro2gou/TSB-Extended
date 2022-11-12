@@ -23,7 +23,6 @@
 
 # MP回復処理
     execute as @a[tag=!this] run function asset:sacred_treasure/0522.humanism/trigger/mp_heal
-
 # ダメージ処理
     # 全プレイヤーの周囲50Mの敵に魔法・水属性ダメージ
         data modify storage lib: Argument.Damage set value 1700f
