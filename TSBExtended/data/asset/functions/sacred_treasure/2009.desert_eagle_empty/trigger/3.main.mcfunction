@@ -17,5 +17,6 @@
     playsound entity.horse.armor master @p ~ ~ ~ 0.6 0.6
 
     data modify storage api: Argument.ID set value 2008
+    execute if entity @s[tag=!1JT.Off] run data modify storage api: Argument.Slot set value 1
     execute if entity @s[tag=1JT.Off] run data modify storage api: Argument.Slot set value 2
     function api:sacred_treasure/give/from_id

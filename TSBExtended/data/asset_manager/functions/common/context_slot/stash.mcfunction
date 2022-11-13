@@ -3,11 +3,11 @@
 #
 #
 # @within function
-#   api:sacred_treasure/*/from_id*
+#   api:sacred_treasure/*/from_id
 
 # スタックに新しい空間を追加する
     data modify storage asset:context SlotStashStack append value {}
-# slotを退避(Valueに突っ込んでいるのは、slotのデータ型が一意に定まらず特定の型のリストとして持てないため)
+# Slotを退避(Valueに突っ込んでいるのは、slotのデータ型が一意に定まらず特定の型のリストとして持てないため)
     data modify storage asset:context SlotStashStack[-1].Value set from storage asset:context Slot
-# slotを掃除
+# Slotを掃除
     data remove storage asset:context Slot
