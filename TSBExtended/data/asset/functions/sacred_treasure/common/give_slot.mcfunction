@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/common/direct_give
+#> asset:sacred_treasure/common/give_slot
 #
 # 神器を直接入手します
 #
@@ -12,7 +12,7 @@
 
 # slot指定あり
     execute if data storage asset:context {Slot:1} if entity @s[nbt={SelectedItem:{}}] run loot give @s mine 10000 0 10000 debug_stick
-    execute if data storage asset:context {Slot:1} unless entity @s[nbt={SelectedItem:{}}] run loot replace entity @s weapon.mainhand mine 10000 0 10000 debug_stick
+    execute if data storage asset:context {Slot:1} unless entity @s[nbt={SelectedItem:{}}] run item replace entity @s weapon from block 10000 0 10000 container.0
     execute if data storage asset:context {Slot:2} if entity @s[nbt={Inventory:[{Slot:-106b}]}] run loot give @s mine 10000 0 10000 debug_stick
     execute if data storage asset:context {Slot:2} unless entity @s[nbt={Inventory:[{Slot:-106b}]}] run loot replace entity @s weapon.offhand mine 10000 0 10000 debug_stick
     execute if data storage asset:context {Slot:3} if entity @s[nbt={Inventory:[{Slot:100b}]}] run loot give @s mine 10000 0 10000 debug_stick
