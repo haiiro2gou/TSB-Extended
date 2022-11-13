@@ -8,13 +8,13 @@
 
 # 自傷する
     function api:data_get/health
-    execute unless score @s 1JU.CoolTime matches 70 store result storage lib: Argument.Damage float 1.20 run data get storage api: Health
-    execute if score @s 1JU.CoolTime matches 70 store result storage lib: Argument.Damage float 0.15 run data get storage api: Health
+    execute unless score @s 1JU.CoolTime matches 70 store result storage lib: Argument.Damage float 1.00 run attribute @s generic.max_health get
+    execute if score @s 1JU.CoolTime matches 70 store result storage lib: Argument.Damage float 0.15 run attribute @s generic.max_health get
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.FixedDamage set value true
     data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは世界の深淵に呑まれた。","with":[{"selector":"@s"}]}]']
     function api:damage/modifier
-    function api:damage/
+    execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
 
 # 演出
     execute unless score @s 1JU.CoolTime matches 70 run particle minecraft:large_smoke ~ ~0.5 ~ 0 0.5 0 0.2 50 normal
