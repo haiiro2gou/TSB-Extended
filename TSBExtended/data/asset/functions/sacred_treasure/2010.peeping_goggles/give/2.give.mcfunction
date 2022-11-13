@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:sacred_treasure Name set value '{"text":"覗き見ゴーグル","color":"#a1cff4","italic":false}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:sacred_treasure Lore set value ['{"text":"何かを覗き見ることができるゴーグル。"}','{"text":"\\"深淵をのぞく時、深淵もまたこちらをのぞいているのだ。\\"","color":"dark_red"}']
+    data modify storage asset:sacred_treasure Lore set value ['{"text":"ほんの少し後の未来を覗き見ることができるゴーグル。"}','{"text":"\\"深淵をのぞく時、深淵もまたこちらをのぞいているのだ。\\"","color":"dark_red"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:sacred_treasure CostText set value
 # 使用回数 (int) (オプション)
@@ -23,7 +23,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:sacred_treasure Slot set value "head"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:sacred_treasure Trigger set value "sneak1s"
+    data modify storage asset:sacred_treasure Trigger set value "sneak2s"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:sacred_treasure Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -51,7 +51,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:sacred_treasure DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:sacred_treasure CanUsedGod set value ['Nyaptov','Wi-ki']
+    data modify storage asset:sacred_treasure CanUsedGod set value ['Flora', 'Urban', 'Wi-ki', 'Rumor']
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:sacred_treasure CustomNBT set value {HideFlags:68,display:{color:13421772},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"},{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-0.2,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"}]}
 

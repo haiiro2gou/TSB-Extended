@@ -6,3 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:sacred_treasure/2010.peeping_goggles/trigger/**
+    scoreboard objectives add 1JU.CoolTime dummy
