@@ -29,3 +29,8 @@
 * [Oh! My Dat!](https://github.com/Ai-Akaishi/OhMyDat)
 * [ScoreToHealth](https://github.com/Ai-Akaishi/ScoreToHealth)
 * [ScoreToMove](https://github.com/Ai-Akaishi/ScoreToMove)
+
+### 各種リンク
+**Discord: haiiro#3187**  
+**Twitter: [@blanoir3298](https://twitter.com/blanoir3298)**  
+**Youtube: [はいいろ。](https://www.youtube.com/channel/UC4HoswwsCjgVmZlmhZ0Dpbg)**
