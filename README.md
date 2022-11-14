@@ -1,37 +1,31 @@
-# DLの前にお読みください。
-### 本データパックは、TSB v0.1.1でのみ動作を確認しています。他バージョンでの正常な動作は保証できません。
-### 本データパックは、TSBの二次創作です。このデータパックに関するバグ報告は、TSB公式ではなく私(はいいろ。)にお願いします。
-### また、他のTSBの二次創作と競合する場合がありますので、予めご了承ください。(本データパックでは神器のid2001-2003を利用しています)
-## 導入について
-- AssetsからTSB-haiiro-addon.zipとresources.zipをDLする。
-- TheSkyBlessingのワールドフォルダ(以下ワールドフォルダ)を開く。(デフォルトではTheSkyBlessingという名称)
-- ワールドフォルダ内にあるresources.zipをDLしたresources.zipに置き換える。
-- ワールドフォルダ内のdatapacksというフォルダの中にTSB-haiiro-addon.zipを移動させる。
-- (新規ワールドでない場合)ワールド内で「/function core:load_once」を実行する。
+# TSB-Extended
+[]([![discord](https://img.shields.io/discord/742465492861845564?logo=discord&label=discord)](https://discord.gg/vPqHuQNMEv))
+[![stars](https://img.shields.io/github/stars/haiiro2gou/TSB-Extended?logo=github)](https://github.com/haiiro2gou/TSB-Extended/stargazers)
+[![downloads](https://img.shields.io/github/downloads/haiiro2gou/TSB-Extended/total?logo=github)](https://github.com/haiiro2gou/TSB-Extended/releases/latest)
+[![activity](https://img.shields.io/github/commit-activity/m/haiiro2gou/TSB-Extended?label=commit&logo=github)](https://github.com/haiiro2gou/TSB-Extended/commits/master)
+[![workflow](https://img.shields.io/github/workflow/status/haiiro2gou/TSB-Extended/lint-datapack/master?label=linter)](https://github.com/haiiro2gou/TSB-Extended/actions?query=workflow%3Alint-datapack)
+[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.carloscuesta.me/)
 
-  **以上の手順を行うことで導入が完了します。**
-## 追加神器について
-#### [神器2001] 跳躍のチャーム
-- 名前の通り跳躍力が上昇します。
-- アウレシャードの加工時に排出されることがあります。
-#### [神器2002-2003] 火雷
-- 条件付きで高い火力を出すことのできる右手神器です。
-- ミスティカシャードの加工時に排出されることがあります。
-#### [神器2004-2005] 翠嵐
-- 現在制作中です。
-#### [神器2006-2007] 虹霓
-- 現在制作中です。
-## Change Log
-#### v0.0.1 (for TSB v0.1.1)
-- 神器2002-2003が増殖するバグを修正
-- 一部の煩雑なコードを改善
-#### v0.0.0 (for TSB v0.1.1)
-- 神器2001-2003を作成
-## テクスチャについて
-一部の神器のテクスチャは[ピクセルガロー](https://hpgpixer.jp/)氏のドット絵を利用して製作しています。この場を借りてお礼申し上げます。
-## 最後に
-私はコマンドに長けていません。データパックの製作が上手な方々からすると見にくかったり、最適化されていない部分があると思いますが、その点も含めて楽しんでいただけると幸いです。  
-### 各種リンク
-**Discord: haiiro#3187**  
-**Twitter: [@blanoir3298](https://twitter.com/blanoir3298)**  
-**Youtube: [はいいろ。](https://www.youtube.com/channel/UC4HoswwsCjgVmZlmhZ0Dpbg)**
+## はじめに
+このリポジトリは配布マップ[TheSkyBlessing](https://github.com/ProjectTSB/TheSkyBlessing)の非公式拡張データパックの製作・配布場所です。  
+本データパックを利用中にバグが発生した場合、私にバグの報告をお願いします。
+
+## ライセンスについて
+このリポジトリでは、以下のディレクトリを除き、ProjectTSB氏により[CC0-1.0 Universal](LICENSE)ライセンスが適用されています。
+* [Asset](Asset)ディレクトリ ([MIT License](Asset/LICENSE) / Copyright by ProjectTSB)
+* [NaturalMergeSort](NaturalMergeSort)ディレクトリ ([MIT License](NaturalMergeSort/LICENSE) / Copyright by 赤石愛)
+* [OhMyDat](OhMyDat)ディレクトリ ([MIT License](OhMyDat/LICENSE) / Copyright by 赤石愛)
+* [ScoreToHealth](ScoreToHealth)ディレクトリ ([Apache-2.0 License](ScoreToHealth/LICENSE) / Copyright by 赤石愛)
+* [TSBExtended](TSBExtended)ディレクトリ ([Apache-2.0 License](TSBExtended/LICENSE))
+
+## 謝辞
+このリポジトリでは、以下のライブラリを利用させていただいてます。
+
+#### [ProjectTSB](https://github.com/ProjectTSB)御中
+* [TheSkyBlessing](https://github.com/haiiro2gou/TheSkyBlessing)
+
+#### [赤石愛](https://twitter.com/AiAkaishi)氏
+* [NaturalMergeSort](https://github.com/Ai-Akaishi/NaturalMergeSort)
+* [Oh! My Dat!](https://github.com/Ai-Akaishi/OhMyDat)
+* [ScoreToHealth](https://github.com/Ai-Akaishi/ScoreToHealth)
+* [ScoreToMove](https://github.com/Ai-Akaishi/ScoreToMove)
