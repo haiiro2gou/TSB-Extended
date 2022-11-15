@@ -2,11 +2,15 @@
 #
 # 神器の発動条件をチェックします
 #
-# @within function asset:sacred_treasure/2006.rainbow_priming/trigger/1.trigger
+# @within function
+#   asset:sacred_treasure/2006.rainbow_priming/trigger/1.trigger
+#   asset:sacred_treasure/2006.rainbow_priming/trigger/melee/main
+
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:sacred_treasure/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
-    
+    execute if score @s 1JQ.CoolTime matches 1.. run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:sacred_treasure/2006.rainbow_priming/trigger/3.main

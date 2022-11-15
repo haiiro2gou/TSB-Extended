@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:sacred_treasure Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:sacred_treasure Name set value '{"text":"虹霓 -抜刀-","color":"blue","bold":false}'
+    data modify storage asset:sacred_treasure Name set value '{"text":"虹霓 -陰-","color":"blue","bold":false}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:sacred_treasure Lore set value ['{"text":"その斬撃は敵を苦しめ、味方を癒す。","italic":false}','{"text":"\\"其れは総てを包み込む虹。\\"","color":"gray","italic":false}']
 # MP以外の消費物 (TextComponentString) (オプション)
@@ -25,7 +25,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:sacred_treasure Trigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:sacred_treasure Condition set value '{"text":"右手から離す、1秒間スニークのいずれかで納刀する"}'
+    data modify storage asset:sacred_treasure Condition set value '{"text":"右クリックで形態変化"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:sacred_treasure AttackInfo.Damage set value [0,700]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

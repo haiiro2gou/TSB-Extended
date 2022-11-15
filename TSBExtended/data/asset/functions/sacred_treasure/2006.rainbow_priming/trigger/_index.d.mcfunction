@@ -7,4 +7,4 @@
 
 #> tag
 # @within function asset:sacred_treasure/2006.rainbow_priming/trigger/**
-    #declare
+    #declare tag 1JQ.Melee
