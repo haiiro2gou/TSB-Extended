@@ -7,5 +7,7 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:sacred_treasure/common/use/mainhand
 
-# ここから先は神器側の効果の処理を書く
-    say test: 2006.rainbow_priming
+# 神器切り替え
+    data modify storage api: Argument.ID set value 2007
+    data modify storage api: Argument.Slot set value 1
+    function api:sacred_treasure/give/from_id
