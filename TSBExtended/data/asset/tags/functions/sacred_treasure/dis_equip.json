@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:sacred_treasure/2014.crystal_booty/trigger/dis_equip/",
+        "asset:sacred_treasure/2013.crystal_greaves/trigger/dis_equip/",
+        "asset:sacred_treasure/2012.crystal_chestpiece/trigger/dis_equip/",
+        "asset:sacred_treasure/2011.crystal_helmet/trigger/dis_equip/",
         "asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/dis_equip/",
         "asset:sacred_treasure/2001.leap_charm/trigger/dis_equip/"
     ]
