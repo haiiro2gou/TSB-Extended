@@ -6,3 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/**
+    scoreboard objectives add 1JR.CoolTime dummy

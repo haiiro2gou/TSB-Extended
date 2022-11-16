@@ -14,9 +14,13 @@
         data modify storage lib: Argument.AttackType set value "Physical"
         data modify storage lib: Argument.ElementType set value "Fire"
     # 補正
-        function api:damage/modifier
+        function lib:damage/modifier
     # ダメージ
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
+# 対象に効果付与
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run scoreboard players add @s 1JQ.Burning 2
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run scoreboard players set @s 1JQ.Tick 100
+
 # 対象以外の近くの敵にダメージ
     # 数値を代入
         execute store result storage lib: Argument.Damage float 0.5 run scoreboard players get $RandomDamage Temporary
@@ -24,9 +28,12 @@
         data modify storage lib: Argument.AttackType set value "Physical"
         data modify storage lib: Argument.ElementType set value "Fire"
     # 補正
-        function api:damage/modifier_continuation
+        function lib:damage/modifier_continuation
     # ダメージ
-        execute as @e[tag=Victim,distance=..6] at @s as @e[type=#lib:living,type=!player,tag=!Victim] run function api:damage/
+        execute as @e[tag=Victim,distance=..6] at @s as @e[type=#lib:living,type=!player,tag=!Victim,distance=..4] run function lib:damage/
+# 近くの敵にも効果付与
+    execute as @e[tag=Victim,distance=..6] at @s as @e[type=#lib:living,type=!player,tag=!Victim,distance=..4] run scoreboard players add @s 1JQ.Burning 1
+    execute as @e[tag=Victim,distance=..6] at @s as @e[type=#lib:living,type=!player,tag=!Victim,distance=..4] run scoreboard players set @s 1JQ.Tick 100
 
 # 自分にもダメージ
     # 数値を代入
@@ -34,9 +41,9 @@
     # 補整しない
         data modify storage lib: Argument.FixedDamage set value true
     # ダメージ
-        function api:damage/modifier_continuation
-        function api:damage/
+        function lib:damage/modifier_continuation
+        function lib:damage/
 
 # リセット
     scoreboard players reset $RandomDamage Temporary
-    function api:damage/reset
+    function lib:damage/reset
