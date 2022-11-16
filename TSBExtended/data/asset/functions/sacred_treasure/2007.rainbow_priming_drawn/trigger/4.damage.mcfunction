@@ -11,14 +11,14 @@
 
 # 対象に攻撃
     # ダメージ量
-        execute store result storage lib: Argument.Damage float 1.0 run scoreboard players get $RandomDamage Temporary
+        execute store result storage api: Argument.Damage float 1.0 run scoreboard players get $RandomDamage Temporary
     # 属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.ElementType set value "Fire"
     # 補正
-        function lib:damage/modifier
+        function api:damage/modifier
     # ダメージ
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
 
 # 与ダメージの14%を回復
     # 回復量
@@ -30,5 +30,5 @@
 
 # リセット
     scoreboard players reset $RandomDamage Temporary
-    function lib:damage/reset
+    function api:damage/reset
     function api:heal/reset
