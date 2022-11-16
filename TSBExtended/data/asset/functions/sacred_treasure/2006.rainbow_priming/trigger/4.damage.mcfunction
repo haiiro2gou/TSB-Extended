@@ -44,6 +44,11 @@
         function api:damage/modifier_continuation
         function api:damage/
 
+# 演出
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run scoreboard players set @s 1JQ.Particle 10
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] at @s run particle minecraft:lava ~ ~0.5 ~ 0 0.5 0 1 30
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] at @s run playsound minecraft:entity.ghast.shoot player @a ~ ~ ~ 1 0
+
 # リセット
     scoreboard players reset $RandomDamage Temporary
     function api:damage/reset

@@ -18,3 +18,6 @@
 
 # ループ
     schedule function asset:sacred_treasure/2006.rainbow_priming/trigger/schedule_loop 1t replace
+
+# リセット
+    tag @s remove 1JQ.Melee

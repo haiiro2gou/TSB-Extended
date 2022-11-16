@@ -14,3 +14,9 @@
 
 # 形態変化
     execute as @s[tag=!1JR.Melee] run function asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/5.change
+
+# ループ
+    schedule function asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/schedule_loop 1t replace
+
+# リセット
+    tag @s remove 1JR.Melee

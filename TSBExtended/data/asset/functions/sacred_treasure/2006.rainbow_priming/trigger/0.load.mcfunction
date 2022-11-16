@@ -10,4 +10,5 @@
 #   asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/4.damage
     scoreboard objectives add 1JQ.Burning dummy
     scoreboard objectives add 1JQ.CoolTime dummy
+    scoreboard objectives add 1JQ.Particle dummy
     scoreboard objectives add 1JQ.Tick dummy

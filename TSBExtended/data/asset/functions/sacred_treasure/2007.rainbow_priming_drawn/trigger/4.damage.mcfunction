@@ -28,7 +28,14 @@
     # 回復
         function api:heal/
 
+# 演出
+    execute as @e[type=#lib:living,type=!player,tag=Victim,scores={1JQ.Burning=1..},distance=..6] at @s run playsound minecraft:entity.generic.burn player @a ~ ~ ~ 1 0
+    execute as @e[type=#lib:living,type=!player,tag=Victim,scores={1JQ.Burning=1..},distance=..6] at @s run particle minecraft:cloud ~ ~1 ~ 1 1 1 0.1 30 normal
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] unless score @s 1JQ.Burning matches 1.. at @s run playsound minecraft:entity.generic.splash player @a ~ ~ ~ 0.5 1.2
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] unless score @s 1JQ.Burning matches 1.. at @s run particle minecraft:falling_water ~ ~1 ~ 0.5 0.5 0.5 1 30 normal
+
 # リセット
     scoreboard players reset $RandomDamage Temporary
     function api:damage/reset
     function api:heal/reset
+    execute as @e[type=#lib:living,type=!player,tag=Victim,scores={1JQ.Burning=1..},distance=..6] run scoreboard players remove @s 1JQ.Burning 1
