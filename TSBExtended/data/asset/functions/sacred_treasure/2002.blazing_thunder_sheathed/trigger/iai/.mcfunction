@@ -15,13 +15,13 @@
 # 攻撃処理
     # 1段目
         # 与ダメージ
-            data modify storage lib: Argument.Damage set value 400.0f
+            data modify storage api: Argument.Damage set value 400.0f
         # 属性
-            data modify storage lib: Argument.AttackType set value "Physical"
-            data modify storage lib: Argument.ElementType set value "None"
+            data modify storage api: Argument.AttackType set value "Physical"
+            data modify storage api: Argument.ElementType set value "None"
         # ダメージ
-            function lib:damage/modifier
-            execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] positioned ^ ^ ^ run function lib:damage/
+            function api:damage/modifier
+            execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] positioned ^ ^ ^ run function api:damage/
     # 2段目
         # 801を定義
             scoreboard players set $801 Temporary 801
@@ -30,16 +30,16 @@
             scoreboard players operation $RandomDamage Temporary %= $801 Temporary
         # 与ダメージ
             scoreboard players add $RandomDamage Temporary 0
-            execute store result storage lib: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
+            execute store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
         # 属性
-            data modify storage lib: Argument.AttackType set value "Physical"
-            data modify storage lib: Argument.ElementType set value "Thunder"
+            data modify storage api: Argument.AttackType set value "Physical"
+            data modify storage api: Argument.ElementType set value "Thunder"
         # ダメージ
-            function lib:damage/modifier_continuation
-            execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] positioned ^ ^ ^ run function lib:damage/
+            function api:damage/modifier_continuation
+            execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] positioned ^ ^ ^ run function api:damage/
 
 # リセット
     tag @s remove 1JM.Owner
     scoreboard players reset $801 Temporary
     scoreboard players reset $RandomDamage Temporary
-    function lib:damage/reset
+    function api:damage/reset
