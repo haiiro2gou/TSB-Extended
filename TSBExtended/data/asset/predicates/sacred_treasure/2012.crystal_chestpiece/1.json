@@ -3,7 +3,9 @@
     "entity": "this",
     "predicate": {
         "location": {
-            "light": 1
+            "light": {
+                "light": 1
+            }
         }
     }
 }
