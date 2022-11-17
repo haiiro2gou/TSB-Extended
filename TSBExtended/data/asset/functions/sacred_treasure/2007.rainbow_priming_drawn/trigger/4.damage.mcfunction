@@ -7,7 +7,7 @@
 # 乱数取得
     execute store result score $RandomDamage Temporary run function lib:random/
     scoreboard players operation $RandomDamage Temporary %= $71 Const
-    execute as @e[type=#lib:living,type=!player,tag=Victim,scores={1JQ.Burning=1..},distance=..6] run scoreboard players operation $RandomDamage Temporary *= $10 Const
+    execute as @e[type=#lib:living,type=!player,tag=Victim,scores={1JQ.Burning=2..},distance=..6] run scoreboard players operation $RandomDamage Temporary *= $10 Const
 
 # 対象に攻撃
     # ダメージ = ~700
@@ -38,4 +38,4 @@
     scoreboard players reset $RandomDamage Temporary
     function api:damage/reset
     function api:heal/reset
-    execute as @e[type=#lib:living,type=!player,tag=Victim,scores={1JQ.Burning=1..},distance=..6] run scoreboard players remove @s 1JQ.Burning 1
+    execute as @e[type=#lib:living,type=!player,tag=Victim,scores={1JQ.Burning=2..},distance=..6] run scoreboard players remove @s 1JQ.Burning 2

@@ -42,7 +42,7 @@
         data modify storage api: Argument.FixedDamage set value true
     # ダメージ
         function api:damage/modifier_continuation
-        function api:damage/
+        execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
 
 # 演出
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run scoreboard players set @s 1JQ.Particle 10
