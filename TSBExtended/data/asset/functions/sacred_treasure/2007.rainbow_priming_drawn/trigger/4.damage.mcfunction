@@ -10,7 +10,7 @@
     execute as @e[type=#lib:living,type=!player,tag=Victim,scores={1JQ.Burning=1..},distance=..6] run scoreboard players operation $RandomDamage Temporary *= $10 Const
 
 # 対象に攻撃
-    # ダメージ量
+    # ダメージ = ~700
         execute store result storage api: Argument.Damage float 1.0 run scoreboard players get $RandomDamage Temporary
     # 属性
         data modify storage api: Argument.AttackType set value "Physical"
@@ -20,9 +20,9 @@
     # ダメージ
         execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
 
-# 与ダメージの14%を回復
+# 与ダメージの3%を回復 (~21)
     # 回復量
-        execute store result storage api: Argument.Heal float 0.14 run scoreboard players get $RandomDamage Temporary
+        execute store result storage api: Argument.Heal float 0.03 run scoreboard players get $RandomDamage Temporary
     # 補正
         function api:heal/modifier
     # 回復
