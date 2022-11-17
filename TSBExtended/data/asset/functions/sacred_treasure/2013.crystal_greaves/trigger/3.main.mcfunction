@@ -8,4 +8,6 @@
     function asset:sacred_treasure/common/use/legs
 
 # ここから先は神器側の効果の処理を書く
-    say test: 2013.crystal_greaves
+
+# フルセット処理
+    execute if data storage asset:context id.all{head:2011,chest:2012,legs:2013,feet:2014} run function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/

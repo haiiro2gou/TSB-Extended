@@ -1,9 +1,9 @@
-#> asset:sacred_treasure/2014.crystal_booty/give/2.give
+#> asset:sacred_treasure/2014.crystal_sabatons/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:sacred_treasure/2014.crystal_booty/give/1.trigger
+# @within function asset:sacred_treasure/2014.crystal_sabatons/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:sacred_treasure/common/giveを実行することで入手可能。
@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:sacred_treasure Item set value "minecraft:leather_boots"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:sacred_treasure Name set value '{"text":"水晶の靴","color":"#00AACC","italic":false}'
+    data modify storage asset:sacred_treasure Name set value '{"text":"水晶の靴","color":"#FCF3FF","italic":false}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:sacred_treasure Lore set value ['{"text":"謎の水晶で作られた靴。"}','{"text":"魔力が吸われる感覚がする。"}','{"text":"\\"其れは力を吸い尽くす機械。\\"","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
@@ -53,7 +53,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:sacred_treasure CanUsedGod set value ['Flora','Wi-ki','Rumor']
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    # data modify storage asset:sacred_treasure CustomNBT set value {display:{color:47234},HideFrags:100}
+    data modify storage asset:sacred_treasure CustomNBT set value {display:{color:16577535},HideFlags:100,Unbreakable:1b}
 
 # 神器の入手用function
     function asset:sacred_treasure/common/give

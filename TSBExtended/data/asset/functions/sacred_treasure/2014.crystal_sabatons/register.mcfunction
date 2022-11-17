@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2014.crystal_booty/register
+#> asset:sacred_treasure/2014.crystal_sabatons/register
 #
 # 神器プールへの登録処理
 #

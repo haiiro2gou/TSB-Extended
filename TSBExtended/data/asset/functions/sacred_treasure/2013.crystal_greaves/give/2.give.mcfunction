@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:sacred_treasure Item set value "minecraft:leather_leggings"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:sacred_treasure Name set value '{"text":"水晶の脚甲","color":"#00AACC","italic":false}'
+    data modify storage asset:sacred_treasure Name set value '{"text":"水晶の脚甲","color":"#FCF3FF","italic":false}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:sacred_treasure Lore set value ['{"text":"謎の水晶で作られた脚甲。"}','{"text":"身を十分に守れる堅さがある。"}','{"text":"\\"其れは歪みを増幅する畏れ。\\""}']
+    data modify storage asset:sacred_treasure Lore set value ['{"text":"謎の水晶で作られた脚甲。"}','{"text":"身を十分に守れる堅さがある。"}','{"text":"\\"其れは歪みを増幅する畏れ。\\"","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:sacred_treasure CostText set value
 # 使用回数 (int) (オプション)
@@ -53,7 +53,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:sacred_treasure CanUsedGod set value ['Flora','Wi-ki','Rumor']
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:sacred_treasure CustomNBT set value {display:{color:47234},HideFlags:100}
+    data modify storage asset:sacred_treasure CustomNBT set value {display:{color:16577535},HideFlags:100,Unbreakable:1b}
 
 # 神器の入手用function
     function asset:sacred_treasure/common/give
