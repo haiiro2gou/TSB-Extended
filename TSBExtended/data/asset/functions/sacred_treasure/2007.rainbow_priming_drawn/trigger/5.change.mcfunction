@@ -11,3 +11,4 @@
 
 # 演出
     playsound minecraft:entity.ghast.shoot player @a ~ ~ ~ 0.7 0
+    particle minecraft:lava ~ ~0.5 ~ 0 0.5 0 0.3 15

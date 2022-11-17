@@ -8,3 +8,7 @@
     data modify storage api: Argument.ID set value 2007
     data modify storage api: Argument.Slot set value 1
     function api:sacred_treasure/give/from_id
+
+# 演出
+    playsound minecraft:entity.generic.burn player @a ~ ~ ~ 0.5 0
+    particle minecraft:cloud ~ ~1 ~ 1 1 1 0.1 15 normal

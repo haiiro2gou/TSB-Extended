@@ -8,6 +8,8 @@
     execute as @s[tag=1JR.Melee] run data modify storage asset:sacred_treasure IgnoreItemUpdate set value true
     function asset:sacred_treasure/common/use/mainhand
     scoreboard players set @s 1JR.CoolTime 14
+    execute as @s[tag=!1JR.Melee] run data modify storage api: Argument.Fluctuation set value 30
+    execute as @s[tag=!1JR.Melee] run function api:mp/fluctuation
 
 # 近接攻撃
     execute as @s[tag=1JR.Melee] run function asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/4.damage

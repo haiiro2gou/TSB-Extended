@@ -18,6 +18,7 @@
     execute as @e[scores={1JQ.Particle=..0}] run scoreboard players reset @s 1JQ.Particle
 
 # Tick
+    execute as @e[scores={1JQ.Burning=1..}] at @s run particle minecraft:lava ~ ~0.5 ~ 0 0.5 0 0.3 1
     execute as @e[scores={1JQ.Burning=1..}] run scoreboard players remove @s 1JQ.Tick 1
     execute as @e[scores={1JQ.Tick=..0}] run scoreboard players remove @s 1JQ.Burning 1
     execute as @e[scores={1JQ.Burning=1..,1JQ.Tick=..0}] run scoreboard players add @s 1JQ.Tick 100
