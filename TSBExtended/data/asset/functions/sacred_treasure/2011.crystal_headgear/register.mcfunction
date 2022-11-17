@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2011.crystal_helmet/register
+#> asset:sacred_treasure/2011.crystal_headgear/register
 #
 # 神器プールへの登録処理
 #
