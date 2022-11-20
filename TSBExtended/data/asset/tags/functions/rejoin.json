@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:sacred_treasure/2014.crystal_sabatons/trigger/rejoin_process",
+        "asset:sacred_treasure/2011.crystal_headgear/trigger/rejoin_process",
         "asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/rejoin_process",
         "asset:sacred_treasure/2006.rainbow_priming/trigger/rejoin_process",
         "asset:sacred_treasure/2010.peeping_goggles/trigger/rejoin_process",

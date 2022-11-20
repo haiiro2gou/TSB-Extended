@@ -9,4 +9,6 @@
 #   asset:sacred_treasure/2012.crystal_chestpiece/trigger/dis_equip/main
 #   asset:sacred_treasure/2013.crystal_greaves/trigger/dis_equip/main
 #   asset:sacred_treasure/2014.crystal_sabatons/trigger/dis_equip/main
+    #declare score_holder $1JV.Modifier
+    #declare score_holder $1JV.Light
     #declare tag 1JV.Fullset

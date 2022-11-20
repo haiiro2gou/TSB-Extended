@@ -9,6 +9,8 @@
 #   asset:sacred_treasure/2014.crystal_sabatons/trigger/dis_equip/main
 
 # 演出
+    playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 2
+    playsound minecraft:block.glass.break player @a ~ ~ ~ 1 1.5
 
 # 最大MP
     data modify storage api: Argument.UUID set value [I;1,1,2011,0]
@@ -20,3 +22,4 @@
 
 # リセット
     tag @s remove 1JV.Fullset
+    scoreboard players reset @s 1JV.Tick
