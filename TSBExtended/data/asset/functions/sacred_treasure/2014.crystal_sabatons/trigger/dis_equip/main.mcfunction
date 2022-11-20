@@ -13,7 +13,7 @@
 
 # タグはがし
     tag @s remove 1JY.Equipped
-    scoreboard player reset @s 1JY.Tick
+    scoreboard players reset @s 1JY.Tick
 
 # フルセット解除
     execute if entity @s[tag=1JV.Fullset] run function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/fullset_dis_equip
