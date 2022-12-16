@@ -3,7 +3,7 @@
 [![stars](https://img.shields.io/github/stars/haiiro2gou/TSB-Extended?logo=github)](https://github.com/haiiro2gou/TSB-Extended/stargazers)
 [![downloads](https://img.shields.io/github/downloads/haiiro2gou/TSB-Extended/total?logo=github)](https://github.com/haiiro2gou/TSB-Extended/releases/latest)
 [![activity](https://img.shields.io/github/commit-activity/m/haiiro2gou/TSB-Extended?label=commit&logo=github)](https://github.com/haiiro2gou/TSB-Extended/commits/master)
-[![workflow](https://img.shields.io/github/workflow/status/haiiro2gou/TSB-Extended/lint-datapack/master?label=linter)](https://github.com/haiiro2gou/TSB-Extended/actions?query=workflow%3Alint-datapack)
+[![workflow](https://img.shields.io/github/actions/workflow/status/haiiro2gou/TSB-Extended/datapack-linter.yml?branch=master&label=linter)](https://github.com/haiiro2gou/TSB-Extended/actions?query=workflow%3Alint-datapack)
 [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.carloscuesta.me/)
 
 ## はじめに
