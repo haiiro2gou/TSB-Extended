@@ -4,6 +4,9 @@
 #
 # @within function asset:sacred_treasure/common/give
 
+# Slotが未設定の時mainhandに流す
+    execute unless data storage asset:context Slot run data modify storage asset:context Slot set value "mainhand"
+
 # アイテムを退避
     execute if data storage asset:context {Slot:"mainhand"} run data modify storage asset:context Evacuate set from entity @s SelectedItem
     execute if data storage asset:context {Slot:"offhand"} run data modify storage asset:context Evacuate set from entity @s Inventory[{Slot:-106b}]
