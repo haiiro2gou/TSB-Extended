@@ -1,4 +1,10 @@
 {
     "values": [
+        "asset:sacred_treasure/2024.multitool_shear/trigger/1.trigger",
+        "asset:sacred_treasure/2023.multitool_hoe/trigger/1.trigger",
+        "asset:sacred_treasure/2022.multitool_axe/trigger/1.trigger",
+        "asset:sacred_treasure/2021.multitool_shovel/trigger/1.trigger",
+        "asset:sacred_treasure/2020.multitool_pickaxe/trigger/1.trigger",
+        "asset:sacred_treasure/2019.multitool_stick/trigger/1.trigger"
     ]
 }

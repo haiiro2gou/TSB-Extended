@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:sacred_treasure/2024.multitool_shear/trigger/rejoin_process",
+        "asset:sacred_treasure/2023.multitool_hoe/trigger/rejoin_process",
+        "asset:sacred_treasure/2022.multitool_axe/trigger/rejoin_process",
+        "asset:sacred_treasure/2021.multitool_shovel/trigger/rejoin_process",
+        "asset:sacred_treasure/2020.multitool_pickaxe/trigger/rejoin_process",
+        "asset:sacred_treasure/2019.multitool_stick/trigger/rejoin_process",
         "asset:sacred_treasure/2014.crystal_sabatons/trigger/rejoin_process",
         "asset:sacred_treasure/2011.crystal_headgear/trigger/rejoin_process",
         "asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/rejoin_process",
