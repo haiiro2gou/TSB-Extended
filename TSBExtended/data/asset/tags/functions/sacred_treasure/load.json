@@ -1,10 +1,5 @@
 {
     "values": [
-        "asset:sacred_treasure/2024.multitool_shear/trigger/0.load",
-        "asset:sacred_treasure/2023.multitool_hoe/trigger/0.load",
-        "asset:sacred_treasure/2022.multitool_axe/trigger/0.load",
-        "asset:sacred_treasure/2021.multitool_shovel/trigger/0.load",
-        "asset:sacred_treasure/2020.multitool_pickaxe/trigger/0.load",
         "asset:sacred_treasure/2019.multitool_stick/trigger/0.load",
         "asset:sacred_treasure/2014.crystal_sabatons/trigger/0.load",
         "asset:sacred_treasure/2011.crystal_headgear/trigger/0.load",
