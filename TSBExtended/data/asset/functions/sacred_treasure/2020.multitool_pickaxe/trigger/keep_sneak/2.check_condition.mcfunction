@@ -1,8 +1,8 @@
-#> asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/2.check_condition
+#> asset:sacred_treasure/2020.multitool_pickaxe/trigger/keep_sneak/2.check_condition
 #
 # 神器の発動条件をチェックします
 #
-# @within function asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/1.trigger
+# @within function asset:sacred_treasure/2020.multitool_pickaxe/trigger/keep_sneak/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:sacred_treasure/common/check_condition/mainhand
