@@ -15,11 +15,11 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:sacred_treasure Name set value '{"text":"マルチツール"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:sacred_treasure Lore set value ['{"text":"様々な状況に対応できる便利な道具。"}','{"text":"稼動に燃料を必要とする。"}']
+    data modify storage asset:sacred_treasure Lore set value ['{"text":"様々な状況に対応できる便利な道具。"}','{"text":"起動することで眼前のブロックを破壊しやすい形状に変化する。"}']
 # MP以外の消費物 (TextComponentString) (オプション)
-    data modify storage asset:sacred_treasure CostText set value '[{"translate":"item.minecraft.charcoal"},{"text":" x1"}]'
+    # data modify storage asset:sacred_treasure CostText set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:sacred_treasure RemainingCount set value 1600
+    # data modify storage asset:sacred_treasure RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:sacred_treasure Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
