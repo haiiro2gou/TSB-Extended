@@ -19,7 +19,7 @@
 # MP以外の消費物 (TextComponentString) (オプション)
     data modify storage asset:sacred_treasure CostText set value '[{"translate":"item.minecraft.charcoal"},{"text":" x1"}]'
 # 使用回数 (int) (オプション)
-    # data modify storage asset:sacred_treasure RemainingCount set value
+    data modify storage asset:sacred_treasure RemainingCount set value 1600
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:sacred_treasure Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:sacred_treasure AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:sacred_treasure MPCost set value 1
+    data modify storage asset:sacred_treasure MPCost set value 5
 # MP必要量 (int) (オプション)
     # data modify storage asset:sacred_treasure MPRequire set value
 # 神器のクールダウン (int) (オプション)
