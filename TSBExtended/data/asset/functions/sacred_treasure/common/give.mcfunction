@@ -43,11 +43,11 @@
     # execute if data storage asset:context {Type:"box"} // 何もする必要がない
     execute if data storage asset:context {Type:"drop"} run loot spawn ~ ~ ~ mine 10000 0 10000 debug_stick
     execute if data storage asset:context {Type:"drop",Important:true} as @e[type=item,nbt={Item:{tag:{TSB:{}}}},distance=..0.3] run function asset:sacred_treasure/common/protect
-    execute if data storage asset:context {Type:"give"} run function asset:sacred_treasure/common/replace_slot
     execute if data storage asset:context {Type:"give"} run function api:inventory/get_size
     execute if data storage asset:context {Type:"give"} if score $InvSize Lib matches ..35 run loot give @s mine 10000 0 10000 debug_stick
     execute if data storage asset:context {Type:"give"} if score $InvSize Lib matches 36.. run loot spawn ~ ~ ~ mine 10000 0 10000 debug_stick
     execute if data storage asset:context {Type:"give"} if score $InvSize Lib matches 36.. as @e[type=item,nbt={Item:{tag:{TSB:{}}}},distance=..0.3] run function asset:sacred_treasure/common/protect
+    execute if data storage asset:context {Type:"replace"} run function asset:sacred_treasure/common/replace
 
 # リセット
     scoreboard players reset $InvSize Lib
@@ -57,7 +57,6 @@
     data remove storage asset:sacred_treasure Name
     data remove storage asset:sacred_treasure Lore
     data remove storage asset:sacred_treasure RemainingCount
-    data remove storage asset:sacred_treasure RemainingCountMAX
     data remove storage asset:sacred_treasure Slot
     data remove storage asset:sacred_treasure Trigger
     data remove storage asset:sacred_treasure Condition
