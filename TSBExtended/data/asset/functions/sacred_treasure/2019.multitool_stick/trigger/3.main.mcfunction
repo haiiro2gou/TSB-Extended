@@ -7,8 +7,9 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:sacred_treasure/common/use/mainhand
 
-# scoreboard処理
-#define score_holder $10per
+#> private
+# @private
+    #declare score_holder $10per
     execute store result score $10per Temporary run scoreboard players get @s 1K3.Tick
     scoreboard players operation $10per Temporary %= $10 Const
     execute if score $10per Temporary matches 1.. run function asset:sacred_treasure/2019.multitool_stick/trigger/add_mp
