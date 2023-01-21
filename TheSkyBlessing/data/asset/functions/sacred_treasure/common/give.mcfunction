@@ -53,7 +53,6 @@
     data remove storage asset:sacred_treasure Name
     data remove storage asset:sacred_treasure Lore
     data remove storage asset:sacred_treasure RemainingCount
-    data remove storage asset:sacred_treasure RemainingCountMAX
     data remove storage asset:sacred_treasure Slot
     data remove storage asset:sacred_treasure Trigger
     data remove storage asset:sacred_treasure Condition
