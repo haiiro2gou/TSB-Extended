@@ -58,6 +58,7 @@
     data modify storage asset:sacred_treasure Item.tag.TSB.SpecialCooldown set from storage asset:sacred_treasure SpecialCooldown
     data modify storage asset:sacred_treasure Item.tag.TSB.DisableCooldownMessage set from storage asset:sacred_treasure DisableCooldownMessage
     data modify storage asset:sacred_treasure Item.tag.TSB.DisableMPMessage set from storage asset:sacred_treasure DisableMPMessage
+    data modify storage asset:sacred_treasure Item.tag.TSBE set from storage asset:sacred_treasure DataExtension
 
 # 名前
     # 残り回数が存在する場合
