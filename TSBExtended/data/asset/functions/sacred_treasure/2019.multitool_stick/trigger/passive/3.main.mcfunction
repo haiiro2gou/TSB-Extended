@@ -29,7 +29,7 @@
 
     execute store result storage asset:sacred_treasure RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
     execute store result storage asset:sacred_treasure RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
-    function api:sacred_treasure/give/from_id
+    function api:sacred_treasure/replace/from_id
 
 # ループ点火
     execute unless score @s 1K3.Tick matches 1.. run scoreboard players set @s 1K3.Tick 10
