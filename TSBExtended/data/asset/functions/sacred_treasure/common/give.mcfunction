@@ -71,3 +71,4 @@
     data remove storage asset:sacred_treasure SpecialCooldown
     data remove storage asset:sacred_treasure DisableCooldownMessage
     data remove storage asset:sacred_treasure DisableMPMessage
+    data remove storage asset:sacred_treasure DataExtension
