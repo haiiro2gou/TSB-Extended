@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/0.load
+#> asset:sacred_treasure/2019.multitool_stick/trigger/passive/0.load
 #
 # 神器に利用するスコアボード等の初期化処理
 #
