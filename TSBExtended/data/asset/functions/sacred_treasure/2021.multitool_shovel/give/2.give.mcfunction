@@ -53,7 +53,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:sacred_treasure CanUsedGod set value ['Flora','Urban','Wi-ki','Rumor']
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    # data modify storage asset:sacred_treasure CustomNBT set value {}
+    data modify storage asset:sacred_treasure CustomNBT set value {HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:silk_touch",lvl:1s}]}
 
 # 神器の入手用function
     function asset:sacred_treasure/common/give

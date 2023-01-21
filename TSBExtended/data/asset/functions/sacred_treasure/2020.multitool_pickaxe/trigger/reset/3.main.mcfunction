@@ -13,5 +13,4 @@
     data modify storage api: Argument.ID set value 2019
     execute store result storage asset:sacred_treasure RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
     execute store result storage asset:sacred_treasure RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
-    tellraw @s {"nbt":"RemainingCount","storage":"asset:sacred_treasure"}
     function api:sacred_treasure/replace/from_id

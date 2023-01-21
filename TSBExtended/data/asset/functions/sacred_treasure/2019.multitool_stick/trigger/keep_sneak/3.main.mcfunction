@@ -32,7 +32,7 @@
 
     execute store result storage asset:sacred_treasure RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
     execute store result storage asset:sacred_treasure RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
-    data modify storage asset:sacred_treasure CustomNBT set value {HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:efficiency",lvl:1s},{id:"minecraft:silk_touch",lvl:1s}],tag:{TSBE:{EquipCount:2}}}
+    data modify storage asset:sacred_treasure DataExtension set value {EquipCount:2}
     function api:sacred_treasure/replace/from_id
 
 # ループ点火
