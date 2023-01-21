@@ -14,7 +14,7 @@
 # @private
     #declare score_holder $10per
     #declare score_holder $2019
-    #declare score_holder $1K3.Tool
+    #declare score_holder $1K3.ToolBase
     scoreboard players set $2019 Temporary 2019
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
@@ -27,14 +27,14 @@
     scoreboard players reset $10per Temporary
 
 # メイン処理
-    function asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/3.1.adjust
-    scoreboard players operation @s 1K3.Tool += $2019 Temporary
-    execute store result score $1K3.Tool Temporary run data get storage asset:context Items.mainhand.tag.TSB.ID
-    execute unless score @s 1K3.Tool = $1K3.Tool Temporary store result storage api: Argument.ID int 1 run scoreboard players get @s 1K3.Tool
-    execute unless score @s 1K3.Tool = $1K3.Tool Temporary store result storage asset:sacred_treasure RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
-    execute unless score @s 1K3.Tool = $1K3.Tool Temporary store result storage asset:sacred_treasure RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
-    execute unless score @s 1K3.Tool = $1K3.Tool Temporary run data modify storage asset:sacred_treasure DataExtension set value {EquipCount:2}
-    execute unless score @s 1K3.Tool = $1K3.Tool Temporary run function api:sacred_treasure/replace/from_id
+    function asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/adjust/
+    scoreboard players operation $1K3.Tool Temporary += $2019 Temporary
+    execute store result score $1K3.ToolBase Temporary run data get storage asset:context Items.mainhand.tag.TSB.ID
+    execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary store result storage api: Argument.ID int 1 run scoreboard players get $1K3.Tool Temporary
+    execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary store result storage asset:sacred_treasure RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
+    execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary store result storage asset:sacred_treasure RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
+    execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary run data modify storage asset:sacred_treasure DataExtension set value {EquipCount:2}
+    execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary run function api:sacred_treasure/replace/from_id
 
 # ループ点火
     scoreboard players set @s 1K3.Equipped 2
@@ -43,3 +43,5 @@
 
 # リセット
     scoreboard players reset $2019 Temporary
+    scoreboard players reset $1K3.Tool Temporary
+    scoreboard players reset $1K3.ToolBase Temporary

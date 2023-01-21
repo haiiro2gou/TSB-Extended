@@ -1,7 +1,7 @@
 #> asset:sacred_treasure/2019.multitool_stick/trigger/_index.d
 # @private
 
-#> score_holder
+#> tag
 # @within function
 #   asset:sacred_treasure/2019.multitool_stick/trigger/**
 #   asset:sacred_treasure/2020.multitool_pickaxe/trigger/**
