@@ -8,3 +8,4 @@
 # @within function asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/**
     scoreboard objectives add 1K3.Equipped dummy
     scoreboard objectives add 1K3.Tick dummy
+    scoreboard objectives add 1K3.Tool dummy

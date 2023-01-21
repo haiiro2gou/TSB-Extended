@@ -22,6 +22,7 @@
     execute store result storage asset:sacred_treasure RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
     execute store result storage asset:sacred_treasure RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
     function api:sacred_treasure/replace/from_id
+    data modify storage asset:context Items.mainhand set from entity @s SelectedItem
 
 # リセット
     scoreboard players reset $1K4.Count Temporary

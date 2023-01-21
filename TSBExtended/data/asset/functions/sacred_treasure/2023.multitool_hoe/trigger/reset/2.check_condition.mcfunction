@@ -8,6 +8,7 @@
     function asset:sacred_treasure/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
     execute as @s[tag=!1K3.Reset] run tag @s remove CanUsed
+    tag @s remove 1K3.Reset
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:sacred_treasure/2020.multitool_pickaxe/trigger/reset/3.main

@@ -6,4 +6,4 @@
 
 # タグからツールを合わせるよ
 
-    scoreboard players set $1K3.Tool Temporary 1
+    scoreboard players set @s 1K3.Tool 1
