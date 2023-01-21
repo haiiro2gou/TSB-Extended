@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/add_mp
+#> asset:sacred_treasure/2019.multitool_stick/trigger/add_mp
 #
 # mp回復処理
 #
