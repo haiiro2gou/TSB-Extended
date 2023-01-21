@@ -8,6 +8,7 @@
     function asset:sacred_treasure/common/use/auto
 
 # 燃料は消費
+
     clear @s charcoal 1
 
 # 燃料を充填

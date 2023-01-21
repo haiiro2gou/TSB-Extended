@@ -14,3 +14,5 @@
     function asset:sacred_treasure/common/use/mainhand
 
 # メイン処理
+    execute unless data storage asset:context Item.mainhand.id run data modify storage api: Argument.ID set value 2025
+    execute unless data storage asset:context Item.mainhand.id run function api:sacred_treasure/give/from_id
