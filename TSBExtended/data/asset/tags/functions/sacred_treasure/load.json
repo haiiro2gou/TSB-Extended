@@ -1,6 +1,7 @@
 {
     "values": [
-        "asset:sacred_treasure/2019.multitool_stick/trigger/passive/0.load",
+        "asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/0.load",
+        "asset:sacred_treasure/2019.multitool_stick/trigger/0.load",
         "asset:sacred_treasure/2014.crystal_sabatons/trigger/0.load",
         "asset:sacred_treasure/2011.crystal_headgear/trigger/0.load",
         "asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/0.load",

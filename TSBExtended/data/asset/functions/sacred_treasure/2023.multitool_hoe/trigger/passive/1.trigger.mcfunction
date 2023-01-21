@@ -5,4 +5,4 @@
 # @within tag/function asset:sacred_treasure/**
 
 # storage asset:idのmainhandに装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
-    execute if data storage asset:context id{mainhand:2019} run function asset:sacred_treasure/2023.multitool_hoe/trigger/passive/2.check_condition
+    execute if data storage asset:context id{mainhand:2023} run function asset:sacred_treasure/2023.multitool_hoe/trigger/passive/2.check_condition
