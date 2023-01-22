@@ -10,6 +10,19 @@
 #   asset:sacred_treasure/2023.multitool_hoe/trigger/passive/check
 #   asset:sacred_treasure/2024.multitool_shear/trigger/passive/check
 
+#> private
+# @private
+    #declare score_holder $1K3.Use
+
 # メイン処理
-    execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 2025
-    execute unless data storage asset:context Items.mainhand.id run function api:sacred_treasure/replace/from_id
+    execute store result score $1K3.Use Temporary run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
+    scoreboard players remove $1K3.Use Temporary 1
+    execute if score $1K3.Use Temporary matches ..0 run data modify storage api: Argument.ID set value 2025
+    execute if score $1K3.Use Temporary matches 1.. store result storage api: Argument.ID int 1 run data get storage asset:context Items.mainhand.tag.TSB.ID
+    execute if score $1K3.Use Temporary matches 1.. store result storage asset:sacred_treasure RemainingCount int 1 run scoreboard players get $1K3.Use Temporary
+    execute if score $1K3.Use Temporary matches 1.. store result storage asset:sacred_treasure RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
+    function api:sacred_treasure/replace/from_id
+    data modify storage asset:context Items.mainhand set from entity @s SelectedItem
+
+# リセット
+    scoreboard players reset $1K3.Use Temporary
