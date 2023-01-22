@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2020.multitool_pickaxe/trigger/equip/3.main
+#> asset:sacred_treasure/2020.multitool_pickaxe/trigger/equip/main
 #
 # 神器のメイン処理部
 #

@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2024.multitool_shear/trigger/passive/check_condition
+#> asset:sacred_treasure/2024.multitool_shear/trigger/passive/check
 #
 # 神器の発動条件をチェックします
 #

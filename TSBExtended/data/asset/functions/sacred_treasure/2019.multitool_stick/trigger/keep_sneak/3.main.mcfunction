@@ -26,6 +26,9 @@
     execute if score $10per Temporary matches 1.. run function asset:sacred_treasure/2019.multitool_stick/trigger/add_mp
     scoreboard players reset $10per Temporary
 
+# 演出
+    execute unless score @s 1K3.Tick matches 1.. run playsound entity.minecart.riding master @a ~ ~ ~ 0.3 1.5
+
 # メイン処理
     function asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/adjust/
     scoreboard players operation $1K3.Tool Temporary += $2019 Temporary

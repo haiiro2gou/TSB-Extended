@@ -10,6 +10,8 @@
 #   asset:sacred_treasure/2024.multitool_shear/trigger/reset/check
 
 # デフォルトに戻しましょうねー
+    playsound block.lava.extinguish master @a ~ ~ ~ 0.5 0.7
+    particle cloud ~ ~1 ~ 0.1 0.1 0.1 0.1 10
     data modify storage api: Argument.ID set value 2019
     execute store result storage asset:sacred_treasure RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
     execute store result storage asset:sacred_treasure RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX

@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2022.multitool_axe/trigger/passive/1.trigger
+#> asset:sacred_treasure/2022.multitool_axe/trigger/passive/
 #
 # 指定したイベントタイミングで実行されるfunction
 #

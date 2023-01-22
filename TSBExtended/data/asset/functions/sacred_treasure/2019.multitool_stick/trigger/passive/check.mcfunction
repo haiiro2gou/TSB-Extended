@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2019.multitool_stick/trigger/passive/check_condition
+#> asset:sacred_treasure/2019.multitool_stick/trigger/passive/check
 #
 # 神器の発動条件をチェックします
 #

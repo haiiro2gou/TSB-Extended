@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2024.multitool_shear/trigger/passive/1.trigger
+#> asset:sacred_treasure/2024.multitool_shear/trigger/passive/
 #
 # 指定したイベントタイミングで実行されるfunction
 #

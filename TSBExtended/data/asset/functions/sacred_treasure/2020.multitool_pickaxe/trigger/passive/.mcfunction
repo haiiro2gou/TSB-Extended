@@ -1,5 +1,4 @@
-#> asset:sacred_treasure/2020.multitool_pickaxe/trigger/passive/1.trigger
-#
+#> asset:sacred_treasure/2020.multitool_pickaxe/trigger/passive/
 # 指定したイベントタイミングで実行されるfunction
 #
 # @within tag/function asset:sacred_treasure/**
