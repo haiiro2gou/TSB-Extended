@@ -7,14 +7,10 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:sacred_treasure/common/use/auto
 
-# 燃料は消費
-
-    clear @s charcoal 1
-
 # 燃料を充填
     stopsound @a * entity.item.break
     playsound minecraft:item.flintandsteel.use master @s ~ ~ ~ 1 0
     playsound minecraft:block.piston.extend master @s ~ ~ ~ 1 2
     data modify storage api: Argument.ID set value 2019
-    data modify storage asset:sacred_treasure RemainingCount set value 80
+    execute store result storage asset:sacred_treasure RemainingCount int 1 run data get storage asset:temp 1K9.FuelCount 0.05
     function api:sacred_treasure/give/from_id
