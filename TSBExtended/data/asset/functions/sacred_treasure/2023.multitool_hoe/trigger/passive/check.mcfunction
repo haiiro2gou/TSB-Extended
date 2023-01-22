@@ -4,5 +4,5 @@
 #
 # @within function asset:sacred_treasure/2023.multitool_hoe/trigger/passive/
 
-execute if score @s 1K3.Count matches 1.. run function asset:sacred_treasure/2019.multitool_stick/trigger/passive/main
-scoreboard players reset @s 1K3.Count
+execute if score @s 1K7.Count matches 1.. run function asset:sacred_treasure/2019.multitool_stick/trigger/passive/main
+scoreboard players reset @s 1K7.Count

@@ -1,9 +1,9 @@
-#> asset:sacred_treasure/2024.multitool_shear/give/2.give
+#> asset:sacred_treasure/2024.multitool_shears/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:sacred_treasure/2024.multitool_shear/give/1.trigger
+# @within function asset:sacred_treasure/2024.multitool_shears/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:sacred_treasure/common/giveを実行することで入手可能。
@@ -11,7 +11,7 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:sacred_treasure ID set value 2024
 # 神器のベースアイテム
-    data modify storage asset:sacred_treasure Item set value "minecraft:shears"
+    data modify storage asset:sacred_treasure Item set value "minecraft:shearss"
 # 神器の名前 (TextComponentString)
     data modify storage asset:sacred_treasure Name set value '{"text":"マルチツール(ハサミ)"}'
 # 神器の説明文 (TextComponentString[])

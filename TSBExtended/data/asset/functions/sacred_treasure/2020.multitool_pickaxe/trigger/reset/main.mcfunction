@@ -7,7 +7,7 @@
 #   asset:sacred_treasure/2021.multitool_shovel/trigger/reset/check
 #   asset:sacred_treasure/2022.multitool_axe/trigger/reset/check
 #   asset:sacred_treasure/2023.multitool_hoe/trigger/reset/check
-#   asset:sacred_treasure/2024.multitool_shear/trigger/reset/check
+#   asset:sacred_treasure/2024.multitool_shears/trigger/reset/check
 
 # デフォルトに戻しましょうねー
     playsound block.lava.extinguish master @a ~ ~ ~ 0.5 0.7

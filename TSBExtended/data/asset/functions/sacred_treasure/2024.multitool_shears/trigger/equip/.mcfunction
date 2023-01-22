@@ -1,4 +1,4 @@
-#> asset:sacred_treasure/2024.multitool_shear/trigger/equip/
+#> asset:sacred_treasure/2024.multitool_shears/trigger/equip/
 #
 # 指定したイベントタイミングで実行されるfunction
 #

@@ -11,7 +11,7 @@
     execute unless score $1K3.Tool Temporary matches 1.. if block ^ ^ ^ #minecraft:mineable/shovel run scoreboard players set $1K3.Tool Temporary 2
     execute unless score $1K3.Tool Temporary matches 1.. if block ^ ^ ^ #minecraft:mineable/axe run scoreboard players set $1K3.Tool Temporary 3
     execute unless score $1K3.Tool Temporary matches 1.. if block ^ ^ ^ #minecraft:mineable/hoe run scoreboard players set $1K3.Tool Temporary 4
-    execute unless score $1K3.Tool Temporary matches 1.. if block ^ ^ ^ #asset:sacred_treasure/2019.multitool_stick/shear run scoreboard players set $1K3.Tool Temporary 5
+    execute unless score $1K3.Tool Temporary matches 1.. if block ^ ^ ^ #asset:sacred_treasure/2019.multitool_stick/shears run scoreboard players set $1K3.Tool Temporary 5
     execute unless score $1K3.Tool Temporary matches 1.. unless block ^ ^ ^ air run scoreboard players set $1K3.Tool Temporary 0
 
 # ループ

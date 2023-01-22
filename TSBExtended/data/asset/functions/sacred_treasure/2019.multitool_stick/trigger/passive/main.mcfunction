@@ -8,7 +8,7 @@
 #   asset:sacred_treasure/2021.multitool_shovel/trigger/passive/check
 #   asset:sacred_treasure/2022.multitool_axe/trigger/passive/check
 #   asset:sacred_treasure/2023.multitool_hoe/trigger/passive/check
-#   asset:sacred_treasure/2024.multitool_shear/trigger/passive/check
+#   asset:sacred_treasure/2024.multitool_shears/trigger/passive/check
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:sacred_treasure/common/use/mainhand

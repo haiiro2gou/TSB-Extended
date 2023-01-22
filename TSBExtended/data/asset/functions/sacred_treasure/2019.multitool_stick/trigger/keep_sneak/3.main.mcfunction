@@ -8,7 +8,7 @@
 #   asset:sacred_treasure/2021.multitool_shovel/trigger/keep_sneak/2.check_condition
 #   asset:sacred_treasure/2022.multitool_axe/trigger/keep_sneak/2.check_condition
 #   asset:sacred_treasure/2023.multitool_hoe/trigger/keep_sneak/2.check_condition
-#   asset:sacred_treasure/2024.multitool_shear/trigger/keep_sneak/2.check_condition
+#   asset:sacred_treasure/2024.multitool_shears/trigger/keep_sneak/2.check_condition
 
 #> private
 # @private
