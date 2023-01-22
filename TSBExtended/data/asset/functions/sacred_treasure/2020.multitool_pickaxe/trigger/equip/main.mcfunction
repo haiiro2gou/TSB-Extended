@@ -24,5 +24,10 @@
     function api:sacred_treasure/replace/from_id
     data modify storage asset:context Items.mainhand set from entity @s SelectedItem
 
+# 演出
+    execute unless score $1K4.Count Temporary matches 1.. run playsound block.lava.extinguish master @a ~ ~ ~ 0.5 0.7
+    execute unless score $1K4.Count Temporary matches 1.. run particle cloud ~ ~1 ~ 0.1 0.1 0.1 0.1 10
+    execute if score $1K4.Count Temporary matches 1.. run playsound block.piston.contract master @a ~ ~ ~ 0.5 1.5
+
 # リセット
     scoreboard players reset $1K4.Count Temporary
