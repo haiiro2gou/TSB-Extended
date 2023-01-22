@@ -6,5 +6,5 @@
 
 # 処理
     execute store success score $1K9.Succeed Temporary run clear @s #wool_carpets 1
-    execute if score $1K9.Succeed Temporary matches 1 run data modify storage asset:temp 1K9.FuelCount set value 300
+    execute if score $1K9.Succeed Temporary matches 1 run data modify storage asset:temp 1K9.FuelCount set value 67
     scoreboard players reset $1K9.Succeed Temporary
