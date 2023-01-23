@@ -7,4 +7,5 @@
 # 処理
     execute store success score $1K9.Succeed Temporary run clear @s lava_bucket 1
     execute if score $1K9.Succeed Temporary matches 1 run data modify storage asset:temp 1K9.FuelCount set value 20000
+    execute if score $1K9.Succeed Temporary matches 1 run give @p bucket 1
     scoreboard players reset $1K9.Succeed Temporary
