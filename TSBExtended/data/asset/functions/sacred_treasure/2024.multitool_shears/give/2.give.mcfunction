@@ -11,7 +11,7 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:sacred_treasure ID set value 2024
 # 神器のベースアイテム
-    data modify storage asset:sacred_treasure Item set value "minecraft:shearss"
+    data modify storage asset:sacred_treasure Item set value "minecraft:shears"
 # 神器の名前 (TextComponentString)
     data modify storage asset:sacred_treasure Name set value '{"text":"マルチツール(ハサミ)"}'
 # 神器の説明文 (TextComponentString[])
