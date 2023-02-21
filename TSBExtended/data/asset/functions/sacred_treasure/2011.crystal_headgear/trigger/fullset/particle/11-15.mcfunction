@@ -3,4 +3,4 @@
 #
 # @within function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/main
 
-particle minecraft:end_rod ~ ~1 ~ 0.2 0.2 0.2 0.1 2
+particle minecraft:end_rod ~ ~1 ~ 0.2 0.2 0.2 0.1 1
