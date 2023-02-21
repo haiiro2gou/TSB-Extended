@@ -24,5 +24,8 @@
     data modify storage api: Argument set value {Amount:0.10d,UUID:[I;1,1,2012,5],Operation:"multiply_base"}
     function api:player_modifier/attack/magic/add
 
+# 2013があるなら処理起動
+    execute if data storage asset:context id.all{legs:2013} run function asset:sacred_treasure/2013.crystal_greaves/trigger/3.main
+
 # フルセット処理
     execute if data storage asset:context id.all{head:2011,chest:2012,legs:2013,feet:2014} run function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/
