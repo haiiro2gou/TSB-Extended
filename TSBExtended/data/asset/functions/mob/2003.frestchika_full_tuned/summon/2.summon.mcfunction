@@ -7,7 +7,7 @@
 # 元となるMobを召喚する
     summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible","1JN.Angel"],PersistenceRequired:1b,Silent:1b,NoAI:1b,DeathLootTable:"asset:mob/death/2003.frestchika_full_tuned"}
 # ID (int)
-    data modify storage asset:mob ID set value 2003
+    data modify storage asset:mob ID set value 262
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Enemy.Boss"
 # 干渉可能か否か (boolean)
