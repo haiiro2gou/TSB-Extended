@@ -3,6 +3,7 @@
 # Mobのtick時の処理
 #
 # @within function asset:mob/2003.frestchika_full_tuned/tick/1.trigger
+
 #> private
 # @private
     #declare score_holder $Count

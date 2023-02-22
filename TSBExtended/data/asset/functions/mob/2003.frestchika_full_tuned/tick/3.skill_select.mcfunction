@@ -3,6 +3,7 @@
 #
 #
 # @within function asset:mob/2003.frestchika_full_tuned/tick/2.tick
+
 #> private
 # @private
     #declare score_holder $Random

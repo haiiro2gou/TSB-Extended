@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/2003.frestchika_full_tuned/death/1.trigger
 
-
 # 死亡アニメーションをするためのアマスタを召喚する
     summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["1JN.ArmorStandDeath","1JN.ArmorStandThis","Object","Uninterferable"],Pose:{LeftArm:[15f,0f,-15f],RightArm:[15f,0f,15f]},HandItems:[{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20144}},{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20143}}],ArmorItems:[{},{},{},{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20147}}]}
 # アマスタに位置をあわせる

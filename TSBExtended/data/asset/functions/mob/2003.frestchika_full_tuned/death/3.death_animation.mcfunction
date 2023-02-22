@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/2003.frestchika_full_tuned/death/schedule
 
-
 # スコアを増やしていく
     scoreboard players add @s 1JN.Tick 1
 
