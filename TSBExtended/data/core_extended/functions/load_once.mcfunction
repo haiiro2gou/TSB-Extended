@@ -12,5 +12,10 @@
     tellraw @a [{"text":"Thanks for installation!"}]
     tellraw @a [{"text":"================================","color":"gold"}]
 
+#> スコアボード類
+    #> 常に値が設定される変数用スコアボード
+    # @public
+    scoreboard players set $Difficulty Global 2
+
 #> ROMを初期化する
     function rom:init
