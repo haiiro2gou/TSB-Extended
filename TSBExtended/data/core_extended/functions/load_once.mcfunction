@@ -1,6 +1,6 @@
 #> core_extended:load_once
 #
-# #load時に一回のみ実行される処理群
+# load時に一回のみ実行される処理群
 #
 # @within function core_extended:load
 
@@ -11,3 +11,6 @@
     tellraw @a [{"text":""}]
     tellraw @a [{"text":"Thanks for installation!"}]
     tellraw @a [{"text":"================================","color":"gold"}]
+
+#> ROMを初期化する
+    function rom:init
