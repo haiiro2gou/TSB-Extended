@@ -11,3 +11,8 @@
     tellraw @a [{"text":""}]
     tellraw @a [{"text":"Thanks for installation!"}]
     tellraw @a [{"text":"================================","color":"gold"}]
+
+#> スコアボード類
+    #> 常に値が設定される変数用スコアボード
+    # @public
+    scoreboard players set $Difficulty Global 2
