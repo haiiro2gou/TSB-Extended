@@ -1,8 +1,8 @@
-#> core_extended:load_once
+#> core:extended/load_once
 #
 # load時に一回のみ実行される処理群
 #
-# @within function core_extended:load
+# @within function core:extended/load_once_pre
 
 #> バージョン情報の設定
     data modify storage global Extended.Version set value "v0.1.0"
