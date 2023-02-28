@@ -14,11 +14,11 @@
 
 # 最大MP
     data modify storage api: Argument.UUID set value [I;1,1,2011,0]
-    function api:player_modifier/mp_max/remove
+    function api:modifier/mp_max/remove
 
 # MP回復量
     data modify storage api: Argument.UUID set value [I;1,1,2011,0]
-    function api:player_modifier/mp_regen/remove
+    function api:modifier/mp_regen/remove
 
 # リセット
     tag @s remove 1JV.Fullset

@@ -9,7 +9,7 @@
 
 # 補正解除
     data modify storage api: Argument.UUID set value [I;1,1,2014,3]
-    function api:player_modifier/mp_regen/remove
+    function api:modifier/mp_regen/remove
 
 # タグはがし
     tag @s remove 1JY.Equipped
