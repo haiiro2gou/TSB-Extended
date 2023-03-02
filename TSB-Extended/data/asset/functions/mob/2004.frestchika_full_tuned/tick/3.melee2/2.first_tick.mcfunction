@@ -14,4 +14,4 @@
     playsound minecraft:entity.arrow.hit_player hostile @a ~ ~ ~ 1 1.6
 
 # ヒート値を上げる
-    scoreboard players add @e[type=wither_skeleton,tag=this,distance=..0.01] 1JN.Heat 1
+    scoreboard players add @e[type=wither_skeleton,tag=this,distance=..0.01] 1JO.Heat 1

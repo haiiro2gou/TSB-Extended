@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/2004.frestchika_full_tuned/tick/**
 
-# [ImportKey]: NobwRALgngDgpmAXGGB1JNNlA5qgdmAGjAFdiBLAEyTAHYBjARgA4AGCgJgEMBaGigNgBG3ACwBWTiO4BOESzjc4dfgwDMgzvyYMGVIrk4BbBMkBYmoCXIwEb6AAgaEUnAE5GAzknB1UxXBCTsWRHRwPnCO7mAAbpzoxCbgAB5IAWBQSQC+aUTOFGTEbohiRC4QTr6IyXDo6GQwLiYMLMmOqCUQJsmejrihSPxEAFbEhjBIDESCcABeZD3lRGQuAKJVNXWLAI7E0ZgAyjCcQVSIAGbRdfMuAEJTM44bW1VQewdwR6fodRkAukA_3
+# [ImportKey]: NobwRALgngDgpmAXGGB1JONlA5qgdmAGjAFdiBLAEyTAHYBjARgA4AGCgJgEMBaGigNgBG3ACwBWTiO4BOESzjc4dfgwDMgzvyYMGVIrk4BbBMkBYmoCXIwEb6AAgaEUnAE5GAzknB1UxXBCTsWRHRwPnCO7mAAbpzoxCbgAB5IAWBQSQC+aUTOFGTEbohiRC4QTr6IyXDo6GQwLiYMLMmOqCUQJsmejrihSPxEAFbEhjBIDESCcABeZD3lRGQuAKJVNXWLAI7E0ZgAyjCcQVSIAGbRdfMuAEJTM44bW1VQewdwR6fodRkAukA_3
 # 多角形 1
 particle minecraft:soul_fire_flame ~ ~ ~ 0 0 -5 0.08 0
 particle minecraft:soul_fire_flame ~ ~ ~ 0.21651 0 -4.875 0.08 0

@@ -5,7 +5,7 @@
 # @within function asset:mob/2004.frestchika_full_tuned/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible","1JN.Angel"],PersistenceRequired:1b,Silent:1b,NoAI:1b,DeathLootTable:"asset:mob/death/2004.frestchika_full_tuned"}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible","1JO.Angel"],PersistenceRequired:1b,Silent:1b,NoAI:1b,DeathLootTable:"asset:mob/death/2004.frestchika_full_tuned"}
 # ID (int)
     data modify storage asset:mob ID set value 2004
 # Type (string) Wikiを参照
@@ -59,13 +59,13 @@
         data modify storage asset:mob Resist.Thunder set value 0.5
 
 # 見た目用のアマスタを召喚
-    summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["1JN.ArmorStand","1JN.ArmorStandThis","Object","Uninterferable"],Pose:{LeftArm:[15f,0f,-15f],RightArm:[15f,0f,15f]},HandItems:[{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20144}},{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20143}}],ArmorItems:[{},{},{},{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20147}}]}
+    summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["1JO.ArmorStand","1JO.ArmorStandThis","Object","Uninterferable"],Pose:{LeftArm:[15f,0f,-15f],RightArm:[15f,0f,15f]},HandItems:[{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20144}},{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20143}}],ArmorItems:[{},{},{},{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20147}}]}
 # 位置をあわせる
-    execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] at @s run tp @e[type=armor_stand,tag=1JN.ArmorStandThis,distance=..0.01] @s
+    execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] at @s run tp @e[type=armor_stand,tag=1JO.ArmorStandThis,distance=..0.01] @s
 # タグを消す
-    tag @e[type=armor_stand,tag=1JN.ArmorStandThis,distance=..0.01] remove 1JN.ArmorStandThis
+    tag @e[type=armor_stand,tag=1JO.ArmorStandThis,distance=..0.01] remove 1JO.ArmorStandThis
 # スコアをセットする
-    scoreboard players set @e[type=wither_skeleton,tag=MobInit,distance=..0.01] 1JN.Tick -30
+    scoreboard players set @e[type=wither_skeleton,tag=MobInit,distance=..0.01] 1JO.Tick -30
 
 # MobInitタグ持ちを対象にして召喚関数呼び出し
     execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon

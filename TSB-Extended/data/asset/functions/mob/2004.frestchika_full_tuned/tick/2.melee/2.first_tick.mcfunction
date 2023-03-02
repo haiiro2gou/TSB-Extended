@@ -13,4 +13,4 @@
     data modify entity @s Pose.LeftArm set value [48f,16f,0f]
 
 # ヒート値を上げる
-    scoreboard players add @e[type=wither_skeleton,tag=this,distance=..0.01] 1JN.Heat 3
+    scoreboard players add @e[type=wither_skeleton,tag=this,distance=..0.01] 1JO.Heat 3

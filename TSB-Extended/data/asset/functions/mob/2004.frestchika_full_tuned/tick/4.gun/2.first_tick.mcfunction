@@ -11,4 +11,4 @@
 # 頭も
     item replace entity @s armor.head with stick{CustomModelData:20149}
 # ヒート値を上げる
-    scoreboard players add @e[type=wither_skeleton,tag=this,distance=..0.01] 1JN.Heat 2
+    scoreboard players add @e[type=wither_skeleton,tag=this,distance=..0.01] 1JO.Heat 2

@@ -6,5 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:mob/2004.frestchika_full_tuned/**
-    scoreboard objectives add 1JN.Tick dummy
-    scoreboard objectives add 1JN.Heat dummy
+    scoreboard objectives add 1JO.Tick dummy
+    scoreboard objectives add 1JO.Heat dummy

@@ -8,7 +8,7 @@
 #        asset:mob/2004.frestchika_full_tuned/rejoin_process
 
 # ファンクション
-    execute as @e[type=armor_stand,tag=1JN.ArmorStandDeath] at @s run function asset:mob/2004.frestchika_full_tuned/death/3.death_animation
+    execute as @e[type=armor_stand,tag=1JO.ArmorStandDeath] at @s run function asset:mob/2004.frestchika_full_tuned/death/3.death_animation
 
 # Schedule
-    execute if entity @e[type=armor_stand,tag=1JN.ArmorStandDeath,limit=1] run schedule function asset:mob/2004.frestchika_full_tuned/death/schedule 1t
+    execute if entity @e[type=armor_stand,tag=1JO.ArmorStandDeath,limit=1] run schedule function asset:mob/2004.frestchika_full_tuned/death/schedule 1t
