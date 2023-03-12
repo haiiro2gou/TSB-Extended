@@ -15,7 +15,7 @@
 # タグをリセットする
     function asset:mob/2004.frestchika_full_tuned/tick/skill_tag_remove
 # スコアを戻す
-    scoreboard players set @s 1JO.Tick -10
+    scoreboard players set @s 1JO.Tick -100
 
 # 条件でテレポートする
     function asset:mob/2004.frestchika_full_tuned/tick/move/teleport_check

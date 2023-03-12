@@ -13,13 +13,13 @@
     effect give @s[tag=!1JO.SkillOverHeat] resistance 1 3 true
 
 # スコアを増やす
-    scoreboard players add @s 1JO.Tick 1
+    scoreboard players add @s 1JO.Tick 10
 
 # プレイヤーを見る
     execute if score @s 1JO.Tick matches 0 at @s facing entity @p feet run function asset:mob/2004.frestchika_full_tuned/tick/move/teleport
 
 # プレイヤーが周囲にいないのに時間が着てしまった場合。スコアを戻す
-    execute if score @s 1JO.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s 1JO.Tick -5
+    execute if score @s 1JO.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s 1JO.Tick -50
 
 # その後発動するスキル
 # プレイヤーが周囲にいたらスキル選択

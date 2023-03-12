@@ -13,7 +13,7 @@
 # タグを消す
     tag @e[type=armor_stand,tag=1JO.ArmorStandThis,distance=..0.01] remove 1JO.ArmorStandThis
 # スコアも一応戻す
-    scoreboard players set @s 1JO.Tick -2
+    scoreboard players set @s 1JO.Tick -20
 # ヒートをもどす
     tag @s remove 1JO.SkillOverHeat
     scoreboard players set @s 1JO.Heat 0
