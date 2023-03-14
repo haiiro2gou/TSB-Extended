@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:sacred_treasure/2032.carrot_magica_dark/trigger/click/0.load",
+        "asset:sacred_treasure/2031.carrot_magica_light/trigger/click/0.load",
+        "asset:sacred_treasure/2030.carrot_magica_earth/trigger/click/0.load",
+        "asset:sacred_treasure/2029.carrot_magica_air/trigger/click/0.load",
+        "asset:sacred_treasure/2028.carrot_magica_thunder/trigger/click/0.load",
+        "asset:sacred_treasure/2027.carrot_magica_water/trigger/click/0.load",
+        "asset:sacred_treasure/2026.carrot_magica_fire/trigger/click/0.load",
         "asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/0.load",
         "asset:sacred_treasure/2019.multitool_stick/trigger/0.load",
         "asset:sacred_treasure/2014.crystal_sabatons/trigger/0.load",

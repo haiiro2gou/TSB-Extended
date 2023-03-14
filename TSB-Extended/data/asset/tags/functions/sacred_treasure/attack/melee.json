@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:sacred_treasure/2032.carrot_magica_dark/trigger/attack/melee/1.trigger",
+        "asset:sacred_treasure/2031.carrot_magica_light/trigger/attack/melee/1.trigger",
+        "asset:sacred_treasure/2030.carrot_magica_earth/trigger/attack/melee/1.trigger",
+        "asset:sacred_treasure/2029.carrot_magica_air/trigger/attack/melee/1.trigger",
+        "asset:sacred_treasure/2028.carrot_magica_thunder/trigger/attack/melee/1.trigger",
+        "asset:sacred_treasure/2027.carrot_magica_water/trigger/attack/melee/1.trigger",
+        "asset:sacred_treasure/2026.carrot_magica_fire/trigger/attack/melee/1.trigger",
         "asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/melee/",
         "asset:sacred_treasure/2006.rainbow_priming/trigger/melee/",
         "asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/1.trigger"
