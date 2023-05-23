@@ -5,6 +5,7 @@
 # @within function asset:sacred_treasure/2027.carrot_magica_water/trigger/sneak/1s
 
 # 演出
+    playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.6 2
 
 # 次を呼び出す
     data modify storage api: Argument.ID set value 2028
