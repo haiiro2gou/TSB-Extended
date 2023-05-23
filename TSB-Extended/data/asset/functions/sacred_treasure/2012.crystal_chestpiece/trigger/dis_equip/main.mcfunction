@@ -14,11 +14,11 @@
     data modify storage api: Argument.UUID set value [I;1,1,2012,5]
     function api:modifier/attack/magic/remove
 
-# 2013補正解除
-    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-07DD00000004
-    data modify storage api: Argument.UUID set value [I;1,1,2013,4]
+# 胴脚補正解除
+    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-07DC00000000
+    data modify storage api: Argument.UUID set value [I;1,1,2012,0]
     function api:modifier/mp_max/remove
-    data modify storage api: Argument.UUID set value [I;1,1,2013,4]
+    data modify storage api: Argument.UUID set value [I;1,1,2012,0]
     function api:modifier/attack/magic/remove
 
 # フルセット解除

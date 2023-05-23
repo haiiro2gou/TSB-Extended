@@ -2,11 +2,7 @@
 #
 # 全て装備したときの効果
 #
-# @within function
-#   asset:sacred_treasure/2011.crystal_headgear/trigger/3.main
-#   asset:sacred_treasure/2012.crystal_chestpiece/trigger/3.main
-#   asset:sacred_treasure/2013.crystal_greaves/trigger/3.main
-#   asset:sacred_treasure/2014.crystal_sabatons/trigger/3.main
+# @within function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/equip_check
 
 # 演出
     playsound minecraft:block.end_portal.spawn player @a ~ ~ ~ 0.5 1.8
