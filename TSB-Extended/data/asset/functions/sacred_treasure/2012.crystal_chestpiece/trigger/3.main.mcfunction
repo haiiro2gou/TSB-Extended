@@ -25,4 +25,5 @@
     function api:modifier/attack/magic/add
 
 # 他部位チェック
-    function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/equip_check
+    execute if data storage asset:context id.all{head:2011,chest:2012,legs:2013,feet:2014} run function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/
+    execute if data storage asset:context id.all{chest:2012,legs:2013} run function asset:sacred_treasure/2011.crystal_headgear/trigger/dual_armor/
