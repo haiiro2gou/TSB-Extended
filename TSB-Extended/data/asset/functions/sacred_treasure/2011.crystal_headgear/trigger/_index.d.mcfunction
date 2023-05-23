@@ -11,4 +11,5 @@
 #   asset:sacred_treasure/2014.crystal_sabatons/trigger/dis_equip/main
     #declare score_holder $1JV.Modifier
     #declare score_holder $1JV.Light
+    #declare tag 1JV.DualArmor
     #declare tag 1JV.Fullset

@@ -14,12 +14,8 @@
     data modify storage api: Argument.UUID set value [I;1,1,2012,5]
     function api:modifier/attack/magic/remove
 
-# 2013補正解除
-    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-07DD00000004
-    data modify storage api: Argument.UUID set value [I;1,1,2013,4]
-    function api:modifier/mp_max/remove
-    data modify storage api: Argument.UUID set value [I;1,1,2013,4]
-    function api:modifier/attack/magic/remove
+# 胴脚補正解除
+    execute if entity @s[tag=1JV.DualArmor] run function asset:sacred_treasure/2011.crystal_headgear/trigger/dual_armor/dual_dis_equip
 
 # フルセット解除
     execute if entity @s[tag=1JV.Fullset] run function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/fullset_dis_equip

@@ -17,7 +17,7 @@
     data modify storage api: Argument set value {Amount:0.20d,UUID:[I;1,1,2014,3],Operation:"multiply_base"}
     function api:modifier/mp_regen/add
 
-# フルセット処理
+# 他部位チェック
     execute if data storage asset:context id.all{head:2011,chest:2012,legs:2013,feet:2014} run function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/
 
 # ループ処理

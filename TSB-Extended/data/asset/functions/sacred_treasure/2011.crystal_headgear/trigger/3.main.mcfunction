@@ -24,7 +24,7 @@
     data modify storage api: Argument set value {Amount:-1.0d,UUID:[I;1,1,2011,6],Operation:"multiply"}
     function api:modifier/attack/physical/add
 
-# フルセット処理
+# 他部位チェック
     execute if data storage asset:context id.all{head:2011,chest:2012,legs:2013,feet:2014} run function asset:sacred_treasure/2011.crystal_headgear/trigger/fullset/
 
 # リセット
