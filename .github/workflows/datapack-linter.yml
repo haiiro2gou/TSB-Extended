@@ -13,7 +13,7 @@ jobs:
         with:
           path: TSB-Extended
           fetch-depth: 0
-      
+
       - name: Checkout Dependencies - 1
         uses: actions/checkout@v3
         with:
@@ -22,15 +22,15 @@ jobs:
           fetch-depth: 0
       - run: |
           cd TSB-Patcher
-          git checkout refs/tags/v0.0.0
-      
+          git checkout refs/tags/v0.0.1
+
       - name: Checkout Dependencies - 2
         uses: actions/checkout@v3
         with:
           repository: ProjectTSB/TheSkyBlessing
           fetch-depth: 0
       - run: git checkout refs/tags/v0.1.6
-      
+
       - name: Test
         uses: ChenCMD/datapack-linter@v1
         with:
