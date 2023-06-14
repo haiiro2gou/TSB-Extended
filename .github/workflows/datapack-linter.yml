@@ -20,7 +20,9 @@ jobs:
           repository: haiiro2gou/TSB-Patcher
           path: TSB-Patcher
           fetch-depth: 0
-      - run: git checkout refs/tags/v0.0.0
+      - run: |
+          cd TSB-Patcher
+          git checkout refs/tags/v0.0.0
       
       - name: Checkout Dependencies - 2
         uses: actions/checkout@v3
