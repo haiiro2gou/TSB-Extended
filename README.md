@@ -8,22 +8,18 @@
 
 ## はじめに
 このリポジトリは配布マップ[TheSkyBlessing](https://github.com/ProjectTSB/TheSkyBlessing)の非公式拡張データパックの製作・配布場所です。  
-本データパックを利用中にバグが発生した場合、私にバグの報告をお願いします。
+本データパックを利用中にバグが発生した場合、公式でのバグの報告をしないようお願いします。
 
 ## ライセンスについて
-このリポジトリでは、以下のディレクトリを除き、ProjectTSB氏により[CC0-1.0 Universal](LICENSE)ライセンスが適用されています。
-* [Asset](Asset)ディレクトリ ([MIT License](Asset/LICENSE) / Copyright by ProjectTSB)
-* [NaturalMergeSort](NaturalMergeSort)ディレクトリ ([MIT License](NaturalMergeSort/LICENSE) / Copyright by 赤石愛)
-* [OhMyDat](OhMyDat)ディレクトリ ([MIT License](OhMyDat/LICENSE) / Copyright by 赤石愛)
-* [ScoreToHealth](ScoreToHealth)ディレクトリ ([Apache-2.0 License](ScoreToHealth/LICENSE) / Copyright by 赤石愛)
-* [TheSkyBlessing/data/rom](TheSkyBlessing/data/rom/functions)ディレクトリ ([MIT License](OhMyDat/LICENSE))
-* [TSBExtended/data/asset](TSBExtended/data/asset/functions)ディレクトリ ([Apache-2.0 License](TSBExtended/data/asset/LICENSE))
+このリポジトリでは、以下のディレクトリを除き、ProjectTSBにより[CC0-1.0 Universal](LICENSE)ライセンスが適用されています。
+* [data/asset](data/asset/functions)ディレクトリ ([Apache-2.0 License](data/asset/LICENSE))
+* [data/rom](data/rom/functions)ディレクトリ ([MIT License](https://github.com/ProjectTSB/TheSkyBlessing/blob/master/OhMyDat/LICENSE) / Copyright by 赤石愛)
 
 ## 謝辞
-このリポジトリでは、以下のライブラリを利用させていただいてます。
+このリポジトリでは、以下のライブラリを利用しています。
 
 #### [ProjectTSB](https://github.com/ProjectTSB)御中
-* [TheSkyBlessing](https://github.com/haiiro2gou/TheSkyBlessing)
+* [TheSkyBlessing](https://github.com/ProjectTSB/TheSkyBlessing)
 
 #### [赤石愛](https://twitter.com/AiAkaishi)氏
 * [NaturalMergeSort](https://github.com/Ai-Akaishi/NaturalMergeSort)
