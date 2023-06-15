@@ -1,0 +1,15 @@
+{
+    "values": [
+        "asset:artifact/2024.multitool_shears/trigger/equip/",
+        "asset:artifact/2023.multitool_hoe/trigger/equip/",
+        "asset:artifact/2022.multitool_axe/trigger/equip/",
+        "asset:artifact/2021.multitool_shovel/trigger/equip/",
+        "asset:artifact/2020.multitool_pickaxe/trigger/equip/",
+        "asset:artifact/2014.crystal_sabatons/trigger/1.trigger",
+        "asset:artifact/2013.crystal_greaves/trigger/1.trigger",
+        "asset:artifact/2012.crystal_chestpiece/trigger/1.trigger",
+        "asset:artifact/2011.crystal_headgear/trigger/1.trigger",
+        "asset:artifact/2003.blazing_thunder_drawn/trigger/equip/",
+        "asset:artifact/2001.leap_charm/trigger/1.trigger"
+    ]
+}
