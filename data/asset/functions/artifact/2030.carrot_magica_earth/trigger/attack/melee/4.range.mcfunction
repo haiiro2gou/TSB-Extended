@@ -1,8 +1,8 @@
-#> asset:sacred_treasure/2030.carrot_magica_earth/trigger/attack/melee/4.range
+#> asset:artifact/2030.carrot_magica_earth/trigger/attack/melee/4.range
 #
 # 範囲攻撃処理
 #
-# @within function asset:sacred_treasure/2030.carrot_magica_earth/trigger/attack/melee/3.main
+# @within function asset:artifact/2030.carrot_magica_earth/trigger/attack/melee/3.main
 
 # ダメージ
     # 乱数

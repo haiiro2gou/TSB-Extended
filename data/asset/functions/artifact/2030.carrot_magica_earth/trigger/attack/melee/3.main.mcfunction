@@ -1,11 +1,11 @@
-#> asset:sacred_treasure/2030.carrot_magica_earth/trigger/attack/melee/3.main
+#> asset:artifact/2030.carrot_magica_earth/trigger/attack/melee/3.main
 #
 # 神器のメイン処理部
 #
-# @within function asset:sacred_treasure/2030.carrot_magica_earth/trigger/attack/melee/2.check_condition
+# @within function asset:artifact/2030.carrot_magica_earth/trigger/attack/melee/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:sacred_treasure/common/use/mainhand
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 
@@ -13,7 +13,7 @@
 
 # ダメージ
     # 範囲呼び出し
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] at @s as @e[type=#lib:living,type=!player,tag=!Victim,distance=..4] run function asset:sacred_treasure/2030.carrot_magica_earth/trigger/attack/melee/4.range
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] at @s as @e[type=#lib:living,type=!player,tag=!Victim,distance=..4] run function asset:artifact/2030.carrot_magica_earth/trigger/attack/melee/4.range
     # 乱数
         execute store result score $RandomDamage Temporary run function lib:random/
         scoreboard players operation $RandomDamage Temporary %= $46 Const

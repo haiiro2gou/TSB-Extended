@@ -1,8 +1,8 @@
-#> asset:sacred_treasure/2031.carrot_magica_light/trigger/click/2.check_condition
+#> asset:artifact/2031.carrot_magica_light/trigger/click/2.check_condition
 #
 # 神器の発動条件をチェックします
 #
-# @within function asset:sacred_treasure/2031.carrot_magica_light/trigger/click/1.trigger
+# @within function asset:artifact/2031.carrot_magica_light/trigger/click/1.trigger
 
 #> private
 # @private
@@ -10,7 +10,7 @@
     #define tag 1KF.NotEnoughMP
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:sacred_treasure/common/check_condition/mainhand
+    function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
     # MPチェック
         function api:mp/get_current
@@ -27,7 +27,7 @@
 
     # 使用不可ならループ発火
         execute if entity @s[tag=!CanUsed] unless score @s 1KF.ErrorCT matches 1.. run scoreboard players set @s 1KF.ErrorCT 20
-        schedule function asset:sacred_treasure/2031.carrot_magica_light/trigger/click/schedule_loop 1t replace
+        schedule function asset:artifact/2031.carrot_magica_light/trigger/click/schedule_loop 1t replace
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:sacred_treasure/2031.carrot_magica_light/trigger/click/3.main
+    execute if entity @s[tag=CanUsed] run function asset:artifact/2031.carrot_magica_light/trigger/click/3.main
