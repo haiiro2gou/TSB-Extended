@@ -1,0 +1,31 @@
+{
+    "values": [
+        "asset:sacred_treasure/2032.carrot_magica_dark/give/1.trigger",
+        "asset:sacred_treasure/2031.carrot_magica_light/give/1.trigger",
+        "asset:sacred_treasure/2030.carrot_magica_earth/give/1.trigger",
+        "asset:sacred_treasure/2029.carrot_magica_air/give/1.trigger",
+        "asset:sacred_treasure/2028.carrot_magica_thunder/give/1.trigger",
+        "asset:sacred_treasure/2027.carrot_magica_water/give/1.trigger",
+        "asset:sacred_treasure/2026.carrot_magica_fire/give/1.trigger",
+        "asset:artifact/2025.multitool_empty/give/1.trigger",
+        "asset:artifact/2024.multitool_shears/give/1.trigger",
+        "asset:artifact/2023.multitool_hoe/give/1.trigger",
+        "asset:artifact/2022.multitool_axe/give/1.trigger",
+        "asset:artifact/2021.multitool_shovel/give/1.trigger",
+        "asset:artifact/2020.multitool_pickaxe/give/1.trigger",
+        "asset:artifact/2019.multitool_stick/give/1.trigger",
+        "asset:artifact/2018.toppo/give/1.trigger",
+        "asset:artifact/2014.crystal_sabatons/give/1.trigger",
+        "asset:artifact/2013.crystal_greaves/give/1.trigger",
+        "asset:artifact/2012.crystal_chestpiece/give/1.trigger",
+        "asset:artifact/2011.crystal_headgear/give/1.trigger",
+        "asset:artifact/2007.rainbow_priming_drawn/give/1.trigger",
+        "asset:artifact/2006.rainbow_priming/give/1.trigger",
+        "asset:artifact/2010.peeping_goggles/give/1.trigger",
+        "asset:artifact/2009.desert_eagle_empty/give/1.trigger",
+        "asset:artifact/2008.desert_eagle/give/1.trigger",
+        "asset:artifact/2003.blazing_thunder_drawn/give/1.trigger",
+        "asset:artifact/2002.blazing_thunder_sheathed/give/1.trigger",
+        "asset:artifact/2001.leap_charm/give/1.trigger"
+    ]
+}
