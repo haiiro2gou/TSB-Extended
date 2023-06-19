@@ -1,38 +1,38 @@
 name: lint-datapack
 on:
-  push:
-  workflow_dispatch:
+    push:
+    workflow_dispatch:
 jobs:
-  lint:
-    name: lint
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          path: TSB-Extended
-          fetch-depth: 0
-      
-      - name: Checkout Dependencies - 1
-        uses: actions/checkout@v3
-        with:
-          repository: haiiro2gou/TSB-Patcher
-          path: TSB-Patcher
-          fetch-depth: 0
-      - run: |
-          cd TSB-Patcher
-          git checkout refs/tags/v0.0.0
-      
-      - name: Checkout Dependencies - 2
-        uses: actions/checkout@v3
-        with:
-          repository: ProjectTSB/TheSkyBlessing
-          fetch-depth: 0
-      - run: git checkout refs/tags/v0.1.6
-      
-      - name: Test
-        uses: ChenCMD/datapack-linter@v1
-        with:
-          outputDefine: public
-          notOutputSuccess: true
+    lint:
+        name: lint
+        runs-on: ubuntu-latest
+        if: "!contains(github.event.head_commit.message, '[skip ci]')"
+        steps:
+            - name: Checkout Dependencies - 1
+              uses: actions/checkout@v3
+              with:
+                repository: ProjectTSB/TheSkyBlessing
+                fetch-depth: 0
+            - run: git checkout refs/tags/v0.1.6
+
+            - name: Checkout Dependencies - 2
+              uses: actions/checkout@v3
+              with:
+                repository: haiiro2gou/TSB-Patcher
+                path: TSB-Patcher
+                fetch-depth: 0
+            - run: |
+                cd TSB-Patcher
+                git checkout refs/tags/v0.0.1
+
+            - name: Checkout
+              uses: actions/checkout@v3
+              with:
+                path: TSB-Extended
+                fetch-depth: 0
+
+            - name: Test
+              uses: ChenCMD/datapack-linter@v1
+              with:
+                outputDefine: public
+                notOutputSuccess: true
