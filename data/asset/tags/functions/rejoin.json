@@ -1,14 +1,14 @@
 {
     "values": [
-        "asset:sacred_treasure/2004.levin_flood_sheathed/trigger/rejoin_process",
-        "asset:sacred_treasure/2019.multitool_stick/trigger/keep_sneak/rejoin_process",
-        "asset:sacred_treasure/2014.crystal_sabatons/trigger/rejoin_process",
-        "asset:sacred_treasure/2011.crystal_headgear/trigger/rejoin_process",
-        "asset:sacred_treasure/2007.rainbow_priming_drawn/trigger/rejoin_process",
-        "asset:sacred_treasure/2006.rainbow_priming/trigger/rejoin_process",
-        "asset:sacred_treasure/2010.peeping_goggles/trigger/rejoin_process",
-        "asset:sacred_treasure/2008.desert_eagle/trigger/rejoin_process",
-        "asset:sacred_treasure/2003.blazing_thunder_drawn/trigger/rejoin_process",
-        "asset:sacred_treasure/2002.blazing_thunder_sheathed/trigger/rejoin_process"
+        "asset:artifact/2004.levin_flood_sheathed/trigger/rejoin_process",
+        "asset:artifact/2019.multitool_stick/trigger/keep_sneak/rejoin_process",
+        "asset:artifact/2014.crystal_sabatons/trigger/rejoin_process",
+        "asset:artifact/2011.crystal_headgear/trigger/rejoin_process",
+        "asset:artifact/2007.rainbow_priming_drawn/trigger/rejoin_process",
+        "asset:artifact/2006.rainbow_priming/trigger/rejoin_process",
+        "asset:artifact/2010.peeping_goggles/trigger/rejoin_process",
+        "asset:artifact/2008.desert_eagle/trigger/rejoin_process",
+        "asset:artifact/2003.blazing_thunder_drawn/trigger/rejoin_process",
+        "asset:artifact/2002.blazing_thunder_sheathed/trigger/rejoin_process"
     ]
 }

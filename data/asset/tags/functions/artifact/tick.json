@@ -1,0 +1,16 @@
+{
+    "values": [
+        "asset:artifact/2024.multitool_shears/trigger/reset/",
+        "asset:artifact/2024.multitool_shears/trigger/passive/",
+        "asset:artifact/2023.multitool_hoe/trigger/reset/",
+        "asset:artifact/2023.multitool_hoe/trigger/passive/",
+        "asset:artifact/2022.multitool_axe/trigger/reset/",
+        "asset:artifact/2022.multitool_axe/trigger/passive/",
+        "asset:artifact/2021.multitool_shovel/trigger/reset/",
+        "asset:artifact/2021.multitool_shovel/trigger/passive/",
+        "asset:artifact/2020.multitool_pickaxe/trigger/reset/",
+        "asset:artifact/2020.multitool_pickaxe/trigger/passive/",
+        "asset:artifact/2019.multitool_stick/trigger/passive/",
+        "asset:artifact/2008.desert_eagle/trigger/tick/"
+    ]
+}
