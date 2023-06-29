@@ -1,4 +1,4 @@
-#> lib:light_level
+#> api:data_get/light_level
 #
 # 対象の光度をstorageに取得します
 #
