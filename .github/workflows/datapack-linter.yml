@@ -28,7 +28,7 @@ jobs:
 
       - run: |
           mv -f TSB-master/** ../TSB-Extended
-          rmdir TSB-master
+          rm -rf TSB-master/
 
       - name: Checkout
         uses: actions/checkout@v3
