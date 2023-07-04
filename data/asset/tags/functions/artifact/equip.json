@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/2017.disappear/trigger/1.trigger",
+        "asset:artifact/2016.despair/trigger/1.trigger",
         "asset:artifact/2024.multitool_shears/trigger/equip/",
         "asset:artifact/2023.multitool_hoe/trigger/equip/",
         "asset:artifact/2022.multitool_axe/trigger/equip/",
