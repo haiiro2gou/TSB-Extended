@@ -1,12 +1,10 @@
-name: lint-datapack
+name: file-list
 on:
-  push:
   workflow_dispatch:
 jobs:
-  lint:
-    name: lint
+  list:
+    name: list
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout Dependencies - 1
         uses: actions/checkout@v3
@@ -35,8 +33,5 @@ jobs:
         with:
           path: TSB-Extended
 
-      - name: Test
-        uses: ChenCMD/datapack-linter@v1
-        with:
-          outputDefine: public
-          notOutputSuccess: true
+      - run: |
+          ls -1URH ../**
