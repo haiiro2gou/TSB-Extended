@@ -15,10 +15,10 @@
 # 空の銃を渡す
     execute as @s[tag=!1JS.Off] unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 2009
     execute as @s[tag=1JS.Off] unless data storage asset:context Items.offhand.id run data modify storage api: Argument.ID set value 2009
-    execute as @s[tag=!1JS.Off] unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.Slot set value 1
-    execute as @s[tag=1JS.Off] unless data storage asset:context Items.offhand.id run data modify storage api: Argument.Slot set value 2
-    execute as @s[tag=!1JS.Off] unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
-    execute as @s[tag=1JS.Off] unless data storage asset:context Items.offhand.id run function api:artifact/give/from_id
+    execute as @s[tag=!1JS.Off] unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.Slot set value "mainhand"
+    execute as @s[tag=1JS.Off] unless data storage asset:context Items.offhand.id run data modify storage api: Argument.Slot set value "offhand"
+    execute as @s[tag=!1JS.Off] unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id
+    execute as @s[tag=1JS.Off] unless data storage asset:context Items.offhand.id run function api:artifact/replace/from_id
 
 # 左右分岐
     execute as @s[tag=1JS.Double] run function asset:artifact/2008.desert_eagle/trigger/double/
