@@ -17,12 +17,12 @@
 # ボスドロ
     data modify storage api: Argument.ID set value 613
     data modify storage api: Argument.Important set value true
-    function api:sacred_treasure/spawn/from_id
+    function api:artifact/spawn/from_id
 
 # ボスドロ
     data modify storage api: Argument.ID set value 948
     data modify storage api: Argument.Important set value true
-    function api:sacred_treasure/spawn/from_id
+    function api:artifact/spawn/from_id
 
 # スケジュールループを開始する
     schedule function asset:mob/2004.frestchika_full_tuned/death/schedule 1t
