@@ -18,3 +18,4 @@
 #   asset_manager:effect/give/give
 #   asset_manager:effect/tick
 #declare tag HasAssetEffect
+#declare tag ClearEffect
