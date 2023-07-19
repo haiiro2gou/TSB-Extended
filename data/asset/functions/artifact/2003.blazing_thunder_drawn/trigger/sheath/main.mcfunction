@@ -15,7 +15,8 @@
     # 納刀
         execute if entity @s[tag=1JN.DisEquip] unless entity @s[scores={1JN.Equipped=0}] run clear @s carrot_on_a_stick{TSB:{ID:2003}} 1
         execute unless entity @s[tag=1JN.DisEquip,scores={1JN.Equipped=0}] run data modify storage api: Argument.ID set value 2002
-        execute unless entity @s[tag=1JN.DisEquip,scores={1JN.Equipped=0}] run function api:artifact/give/from_id
+        execute unless entity @s[tag=1JN.DisEquip,scores={1JN.Equipped=0}] run data modify storage api: Argument.Slot set value "mainhand"
+        execute unless entity @s[tag=1JN.DisEquip,scores={1JN.Equipped=0}] run function api:artifact/replace/from_id
 
 # 連続納刀防止
     tag @s add 1JN.SheathCD
