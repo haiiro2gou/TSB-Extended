@@ -4,6 +4,11 @@
 #
 # @within tag/function asset:mob/load
 
-#> 定義類はここに
-# @within function asset:mob/2001.levin_flood_square/**
+#> score
+# @within function
+#   asset:artifact/2005.levin_flood_drawn/**
+#   asset:mob/2001.levin_flood_square/**
+    scoreboard objectives add 1JL.Charge dummy
+    scoreboard objectives add 1JL.ChargeTime dummy
     scoreboard objectives add 1JL.Tick dummy
+    scoreboard objectives add 1JL.UserID dummy

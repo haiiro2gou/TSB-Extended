@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/2001.levin_flood_square/rejoin_process",
         "asset:artifact/2004.levin_flood_sheathed/trigger/rejoin_process",
         "asset:artifact/2019.multitool_stick/trigger/keep_sneak/rejoin_process",
         "asset:artifact/2014.crystal_sabatons/trigger/rejoin_process",

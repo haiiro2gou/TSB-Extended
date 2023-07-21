@@ -5,9 +5,10 @@
 # @within function asset:mob/2001.levin_flood_square/tick/3.2.damage_and_vfx
 
 # 音
-    playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 2 0
-    playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 1 0
-    playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 0 0
+    playsound entity.dolphin.splash player @a ~ ~ ~ 1 2 0
+    playsound entity.dolphin.splash player @a ~ ~ ~ 1 1 0
+    playsound entity.dolphin.splash player @a ~ ~ ~ 1 0 0
+    playsound entity.firework_rocket.twinkle player @a ~ ~ ~ 0.7 1.5 0
 
 ### Particle Image Function
 ### Version: 1.0.4
