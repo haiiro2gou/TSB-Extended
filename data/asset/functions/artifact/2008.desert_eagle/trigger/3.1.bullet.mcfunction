@@ -11,7 +11,7 @@
     execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add 1JS.Landing
 
 # ターゲットにタグ付与
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0] run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0] add 1JS.LandingTarget
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0] run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0,limit=1] add 1JS.LandingTarget
 
 # 演出
     particle dust 0.161 0.161 0.161 1 ~ ~ ~ 0 0 0 0 0
