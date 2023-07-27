@@ -6,8 +6,8 @@
 
 # 神器切り替え
     data modify storage api: Argument.ID set value 2007
-    data modify storage api: Argument.Slot set value 1
-    function api:artifact/give/from_id
+    data modify storage api: Argument.Slot set value "mainhand"
+    function api:artifact/replace/from_id
 
 # 演出
     playsound minecraft:entity.generic.burn player @a ~ ~ ~ 0.5 0

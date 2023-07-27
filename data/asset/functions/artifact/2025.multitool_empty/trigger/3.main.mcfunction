@@ -13,4 +13,4 @@
     playsound minecraft:block.piston.extend master @s ~ ~ ~ 1 2
     data modify storage api: Argument.ID set value 2019
     execute store result storage asset:artifact RemainingCount int 1 run data get storage asset:temp 1K9.FuelCount 0.05
-    function api:artifact/give/from_id
+    function api:artifact/replace/from_id

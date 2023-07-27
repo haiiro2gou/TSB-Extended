@@ -53,7 +53,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ['Urban','Nyaptov']
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:2,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-0.75,Operation:2,UUID:[I;1,1,2003,1],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.5,Operation:2,UUID:[I;1,1,2003,1],Slot:"mainhand"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:2,Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-0.75,Operation:2,UUID:[I;1,1,2003,1],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.5,Operation:2,UUID:[I;1,1,2003,1],Slot:"mainhand"}]}
 
 # 神器の入手用function
     function asset:artifact/common/give

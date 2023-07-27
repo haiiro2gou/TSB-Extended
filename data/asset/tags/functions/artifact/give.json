@@ -7,6 +7,8 @@
         "asset:artifact/2028.carrot_magica_thunder/give/1.trigger",
         "asset:artifact/2027.carrot_magica_water/give/1.trigger",
         "asset:artifact/2026.carrot_magica_fire/give/1.trigger",
+        "asset:artifact/2005.levin_flood_drawn/give/1.trigger",
+        "asset:artifact/2004.levin_flood_sheathed/give/1.trigger",
         "asset:artifact/2025.multitool_empty/give/1.trigger",
         "asset:artifact/2024.multitool_shears/give/1.trigger",
         "asset:artifact/2023.multitool_hoe/give/1.trigger",

@@ -16,7 +16,8 @@
     scoreboard players set @s 1JM.ChargeTime 200
     scoreboard players set @s 1JM.CoolTime 300
     data modify storage api: Argument.ID set value 2003
-    function api:artifact/give/from_id
+    data modify storage api: Argument.Slot set value "mainhand"
+    function api:artifact/replace/from_id
 
 # ループ起動
     function asset:artifact/2002.blazing_thunder_sheathed/trigger/schedule_loop
