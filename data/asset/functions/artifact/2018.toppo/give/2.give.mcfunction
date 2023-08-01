@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:cooked_mutton"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"toppo","color":"#6C3524","obfuscated":true,"italic":false},{"text":"トッポ","color":"white","obfuscated":false,"italic":false},{"text":"toppo","color":"#6C3524","obfuscated":true,"italic":false}]'
+    data modify storage asset:artifact Name set value '[{"text":"toppo","color":"#6C3524","obfuscated":true,"italic":false},{"text":"トッポ","color":"white","obfuscated":false,"italic":false},{"text":"choko","color":"#6C3524","obfuscated":true,"italic":false}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"その点トッポってすげぇよな、最後までチョコたっぷりだもん。"}']
+    data modify storage asset:artifact Lore set value ['{"text":"最後までチョコたっぷりだもん。"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
