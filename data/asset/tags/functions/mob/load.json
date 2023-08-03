@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/2003.thunder_sprite/0.load",
+        "asset:mob/2002.thunder_crowder/0.load",
         "asset:mob/2001.levin_flood_square/0.load"
     ]
 }
