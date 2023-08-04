@@ -23,7 +23,7 @@
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Head set value
+        data modify storage asset:mob Armor.Head set value {id:"beacon",Count:1b}
     # 胴 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Chest set value
     # 脚 (Compound(Item)) (オプション)
@@ -31,7 +31,7 @@
     # 足 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Feet set value
 # 防具ドロップ率 ([float, float]) (オプション)
-    # data modify storage asset:mob ArmorDropChances set value
+    data modify storage asset:mob ArmorDropChances set value 0
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 2900
 # 攻撃力 (double) (オプション)
@@ -45,7 +45,7 @@
 # 索敵範囲 (double) (オプション)
     data modify storage asset:mob FollowRange set value 32
 # ノックバック耐性 (double) (オプション)
-    data modify storage asset:mob KnockBackResist set value 2
+    # data modify storage asset:mob KnockBackResist set value
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 0.8

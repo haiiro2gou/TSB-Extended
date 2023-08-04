@@ -6,10 +6,9 @@
 #   asset:mob/2003.thunder_sprite/tick/2.tick
 
 # 演出
-    summon lightning_bolt ~ ~ ~
-    summon lightning_bolt ~ ~ ~
-    summon lightning_bolt ~ ~ ~
+    playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 1
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 1 1
+    playsound block.beacon.deactivate hostile @a ~ ~ ~ 1 2
 
 # ダメージ
     data modify storage api: Argument.Damage set value 24f
@@ -24,5 +23,5 @@
     function api:damage/reset
 
 # 自滅
-    effect give @s instant_damage 1 20 true
-    tp ~ -160 ~
+    data modify entity @s Health set value 0
+    tp ~ -256 ~

@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/2002.thunder_crowder/death/1.trigger
 
+
+
 # 召喚
     data modify storage api: Argument.ID set value 2003
     function api:mob/summon

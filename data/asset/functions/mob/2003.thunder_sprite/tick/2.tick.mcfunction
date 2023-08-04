@@ -8,7 +8,7 @@
     particle block gold_block ~ ~ ~ 2 0.2 2 1 20
 
 # プレイヤーが近くにいたら発火
-    execute if entity @e[type=player,tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/2003.thunder_sprite/self_collapse
+    execute if entity @e[type=player,gamemode=!spectator,distance=..2] run function asset:mob/2003.thunder_sprite/self_collapse
 
 # Tick
     scoreboard players remove @s 1JN.Tick 1
