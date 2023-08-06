@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/2003.thunder_sprite/tick/1.trigger",
+        "asset:mob/2002.thunder_crowder/tick/1.trigger",
         "asset:mob/2001.levin_flood_square/tick/1.trigger"
     ]
 }
