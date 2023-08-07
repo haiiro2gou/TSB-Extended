@@ -23,7 +23,6 @@ jobs:
           sparse-checkout: |
             NaturalMergeSort
             OhMyDat
-            ScoreToHealth
           sparse-checkout-cone-mode: false
 
       - run: |
