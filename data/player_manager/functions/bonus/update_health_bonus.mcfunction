@@ -1,4 +1,4 @@
-#> player_manager:bonus/update_mp_bonus
+#> player_manager:bonus/update_health_bonus
 #
 #
 #
@@ -14,7 +14,7 @@
 
 # 古いのをremove
     data modify storage api: Argument.UUID set value [I;2,2,1,1]
-    function api:modifier/max_mp/remove
+    function api:modifier/max_health/remove
 # 差分にする
     scoreboard players operation $Diff Temporary = $MaxMP Global
     execute store result score $RemovedAmount Temporary run data get storage api: Removed.Amount 1
@@ -23,8 +23,8 @@
 # 出力
     execute store result score $isNegative Temporary if score $Diff Temporary matches ..-1
     execute if score $isNegative Temporary matches 1 run scoreboard players operation $Diff Temporary *= $-1 Const
-    execute if score $isNegative Temporary matches 0 if score $Diff Temporary matches 1.. run tellraw @s [{"text":"最大魔力が","color":"white"},{"score":{"name":"$Diff","objective":"Temporary"},"color":"aqua"},{"text":"%増加した","color":"white"}]
-    execute if score $isNegative Temporary matches 1 if score $Diff Temporary matches 1.. run tellraw @s [{"text":"最大魔力が","color":"white"},{"score":{"name":"$Diff","objective":"Temporary"},"color":"aqua"},{"text":"%減少した","color":"white"}]
+    execute if score $isNegative Temporary matches 0 if score $Diff Temporary matches 1.. run tellraw @s [{"text":"最大体力が","color":"white"},{"score":{"name":"$Diff","objective":"Temporary"},"color":"aqua"},{"text":"%増加した","color":"white"}]
+    execute if score $isNegative Temporary matches 1 if score $Diff Temporary matches 1.. run tellraw @s [{"text":"最大体力が","color":"white"},{"score":{"name":"$Diff","objective":"Temporary"},"color":"aqua"},{"text":"%減少した","color":"white"}]
 # リセット
     scoreboard players reset $Diff Temporary
     scoreboard players reset $RemovedAmount Temporary
@@ -32,5 +32,5 @@
 
 # 適用
     data modify storage api: Argument set value {Amount:-1,UUID:[I;2,2,1,1],Operation:"add"}
-    execute store result storage api: Argument.Amount double 1 run scoreboard players get $MaxMP Global
-    function api:modifier/max_mp/add
+    execute store result storage api: Argument.Amount double 1 run scoreboard players get $MaxHealth Global
+    function api:modifier/max_health/add
