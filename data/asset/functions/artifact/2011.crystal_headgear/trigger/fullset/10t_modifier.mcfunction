@@ -6,7 +6,7 @@
 
 # リセット
     data modify storage api: Argument.UUID set value [I;1,1,2011,0]
-    function api:modifier/mp_max/remove
+    function api:modifier/max_mp/remove
     data modify storage api: Argument.UUID set value [I;1,1,2011,0]
     function api:modifier/mp_regen/remove
 
@@ -18,7 +18,7 @@
     scoreboard players remove $1JV.Light Temporary 10
     data modify storage api: Argument set value {Amount:-1,UUID:[I;1,1,2011,0],Operation:"multiply"}
     execute store result storage api: Argument.Amount double 0.06 run scoreboard players get $1JV.Light Temporary
-    function api:modifier/mp_max/add
+    function api:modifier/max_mp/add
 
 # MP回復量 -75% ~ +150%
     scoreboard players add $1JV.Light Temporary 5

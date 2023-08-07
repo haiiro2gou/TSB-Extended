@@ -1,4 +1,4 @@
-#> api:modifier/mp_max/get
+#> api:modifier/max_mp/get
 #
 #
 #

@@ -1,4 +1,4 @@
-#> api:modifier/mp_max/add
+#> api:modifier/max_mp/add
 #
 #
 #
@@ -7,7 +7,7 @@
 # データ検証
     function api:modifier/core/common/validate
 # データが正しいなら入れる
-    execute if data storage api: Argument.UUID if data storage api: Argument.Amount if data storage api: Argument.Operation run function api:modifier/core/mp_max/add
+    execute if data storage api: Argument.UUID if data storage api: Argument.Amount if data storage api: Argument.Operation run function api:modifier/core/max_mp/add
 # データ代入
     execute store result score @s MPMax run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Modifiers.MPMax 1
 # リセット

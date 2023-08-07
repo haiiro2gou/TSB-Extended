@@ -1,8 +1,8 @@
-#> api:modifier/core/mp_max/remove
+#> api:modifier/core/max_mp/remove
 #
 #
 #
-# @within function api:modifier/mp_max/remove
+# @within function api:modifier/max_mp/remove
 
 # UserStorage呼び出し
     function oh_my_dat:please
