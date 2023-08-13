@@ -20,7 +20,7 @@
     scoreboard players remove $1JV.Light Temporary 5
     data modify storage api: Argument set value {Amount:-1,UUID:[I;1,1,2011,0],Operation:"multiply_base"}
     execute store result storage api: Argument.Amount double 0.03 run scoreboard players get $1JV.Light Temporary
-    function api:modifier/mp_max/add
+    function api:modifier/max_mp/add
 
 # MP回復量 -100% ~ +50%
     scoreboard players remove $1JV.Light Temporary 5

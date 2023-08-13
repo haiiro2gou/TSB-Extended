@@ -14,7 +14,7 @@
 
 # 最大MP
     data modify storage api: Argument.UUID set value [I;1,1,2011,0]
-    function api:modifier/mp_max/remove
+    function api:modifier/max_mp/remove
 
 # MP回復量
     data modify storage api: Argument.UUID set value [I;1,1,2011,0]

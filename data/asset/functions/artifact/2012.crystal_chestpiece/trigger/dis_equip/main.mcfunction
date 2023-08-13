@@ -10,7 +10,7 @@
 # 2012補正解除
     attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-07DC00000005
     data modify storage api: Argument.UUID set value [I;1,1,2012,5]
-    function api:modifier/mp_max/remove
+    function api:modifier/max_mp/remove
     data modify storage api: Argument.UUID set value [I;1,1,2012,5]
     function api:modifier/attack/magic/remove
 

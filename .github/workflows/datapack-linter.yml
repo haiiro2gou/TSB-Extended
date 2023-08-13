@@ -1,6 +1,9 @@
 name: lint-datapack
 on:
   push:
+    branches:
+      - 'master'
+  pull_request:
   workflow_dispatch:
 jobs:
   lint:
@@ -12,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: haiiro2gou/TSB-Patcher
-          ref: refs/tags/v0.0.4-alpha
+          ref: v0.0.4
 
       - name: Checkout Dependencies - 2
         uses: actions/checkout@v3
@@ -23,22 +26,20 @@ jobs:
           sparse-checkout: |
             NaturalMergeSort
             OhMyDat
-            ScoreToHealth
-          sparse-checkout-cone-mode: false
 
-      - run: |
+      - name: Deploy Dependencies
+        run: |
           mv -f TSB-master/** ../TSB-Extended
           rm -rf TSB-master/
 
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v3
         with:
           path: TSB-Extended
 
-      - name: Test
-        uses: ChenCMD/datapack-linter@v1
+      - name: Datapack Linter
+        uses: ChenCMD/datapack-linter@v2
         with:
-          outputDefine: public
-          notOutputSuccess: true
+          muteSuccessResult: true
           ignoreLintPathPattern: |
             animated_java:**
