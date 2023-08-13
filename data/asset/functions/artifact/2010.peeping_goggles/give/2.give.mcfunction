@@ -53,7 +53,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ['Flora', 'Urban', 'Wi-ki', 'Rumor']
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:13421772},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"},{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-0.2,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:13421772},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.5,Operation:1,UUID:[I;1,1,2010,6],Slot:"head"}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
