@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:artifact/2032.carrot_magica_dark/trigger/sneak/1s",
+        "asset:artifact/2031.carrot_magica_light/trigger/sneak/1s",
+        "asset:artifact/2030.carrot_magica_earth/trigger/sneak/1s",
+        "asset:artifact/2029.carrot_magica_air/trigger/sneak/1s",
+        "asset:artifact/2028.carrot_magica_thunder/trigger/sneak/1s",
+        "asset:artifact/2027.carrot_magica_water/trigger/sneak/1s",
+        "asset:artifact/2026.carrot_magica_fire/trigger/sneak/1s",
         "asset:artifact/2009.desert_eagle_empty/trigger/1.trigger",
         "asset:artifact/2003.blazing_thunder_drawn/trigger/sneak/1s"
     ]

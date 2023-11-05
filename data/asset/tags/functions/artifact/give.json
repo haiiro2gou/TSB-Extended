@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:artifact/2032.carrot_magica_dark/give/1.trigger",
+        "asset:artifact/2031.carrot_magica_light/give/1.trigger",
+        "asset:artifact/2030.carrot_magica_earth/give/1.trigger",
+        "asset:artifact/2029.carrot_magica_air/give/1.trigger",
+        "asset:artifact/2028.carrot_magica_thunder/give/1.trigger",
+        "asset:artifact/2027.carrot_magica_water/give/1.trigger",
+        "asset:artifact/2026.carrot_magica_fire/give/1.trigger",
         "asset:artifact/2005.levin_flood_drawn/give/1.trigger",
         "asset:artifact/2004.levin_flood_sheathed/give/1.trigger",
         "asset:artifact/2025.multitool_empty/give/1.trigger",
