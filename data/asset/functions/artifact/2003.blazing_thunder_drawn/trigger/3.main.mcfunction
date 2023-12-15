@@ -12,6 +12,7 @@
     function asset:artifact/common/use/mainhand
 
 # 納刀処理
+    execute unless data storage asset:context Items.mainhand.id run stopsound @a * entity.item.break
     execute unless data storage asset:context Items.mainhand.id run function asset:artifact/2003.blazing_thunder_drawn/trigger/sheath/
 
 # 攻撃処理

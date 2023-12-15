@@ -8,9 +8,7 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     execute as @s[tag=!1JS.Off] run function asset:artifact/common/use/mainhand
     execute as @s[tag=1JS.Off] run function asset:artifact/common/use/offhand
-
-# 火薬を消費
-    # clear @s gunpowder 1
+    execute unless data storage asset:context Items.mainhand.id run stopsound @a * entity.item.break
 
 # 空の銃を渡す
     execute as @s[tag=!1JS.Off] unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 2009

@@ -8,6 +8,7 @@
     execute as @s[tag=1JR.Melee] run data modify storage asset:artifact IgnoreItemUpdate set value true
     function asset:artifact/common/use/mainhand
     scoreboard players set @s 1JR.CoolTime 14
+    stopsound @a * entity.item.break
     execute as @s[tag=!1JR.Melee] run data modify storage api: Argument.Fluctuation set value 30
     execute as @s[tag=!1JR.Melee] run function api:mp/fluctuation
 
