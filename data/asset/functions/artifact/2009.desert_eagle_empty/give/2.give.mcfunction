@@ -17,7 +17,7 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"非常に高い威力を持つ自動拳銃。"}','{"text":"制作者のロマンにより二丁拳銃として扱えてしまう。"}','{"text":"\\"ところで火縄銃の火力高すぎませんか？\\"","color":"dark_gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
-    data modify storage asset:artifact CostText set value '[{"translate":"item.minecraft.gunpowder"},{"text":" x1"}]'
+    data modify storage asset:artifact CostText set value '[{"translate":"item.minecraft.gunpowder"},{"text":" x2"}]'
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 1
 # 神器を発動できるスロット (string) Wikiを参照
