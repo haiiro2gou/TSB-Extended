@@ -4,8 +4,8 @@
 #
 # @within function core:extended/load
 
-# TSB-patcherの後にロードするように
-    execute unless data storage global Patcher.Version run datapack disable "file/TheSkyBlessing"
+# TSBの後にロードするように
+    execute unless data storage global Patcher.Version run datapack disable "file/TSB-Extended"
     execute unless data storage global Patcher.Version run datapack enable "file/TSB-Extended" after "file/TheSkyBlessing"
 
     execute if data storage global {GameVersion:"v0.1.6",Patcher:{Version:"v0.1.0"}} run function core:extended/load_once
