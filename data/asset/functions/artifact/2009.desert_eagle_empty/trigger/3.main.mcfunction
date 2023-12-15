@@ -10,7 +10,7 @@
     stopsound @a * entity.item.break
 
 # 火薬消し
-    clear @s gunpowder 1
+    clear @s gunpowder 2
 
 # リロードする
     stopsound @a * entity.item.break
