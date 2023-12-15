@@ -15,6 +15,7 @@
 # 抜刀処理
     playsound ambient.underwater.exit player @s ~ ~ ~ 0.7 0.7
     playsound entity.player.swim player @s ~ ~ ~ 0.5 0.7
+    stopsound @a * entity.item.break
     data modify storage api: Argument.ID set value 2005
     data modify storage api: Argument.Slot set value "mainhand"
     data modify storage asset:artifact DataExtension.EquipCount set value 2

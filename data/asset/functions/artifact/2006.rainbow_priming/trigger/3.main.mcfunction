@@ -8,6 +8,7 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     execute as @s[tag=1JQ.Melee] run data modify storage asset:artifact IgnoreItemUpdate set value true
     function asset:artifact/common/use/mainhand
+    stopsound @a * entity.item.break
     scoreboard players set @s 1JQ.CoolTime 14
     execute as @s[tag=!1JQ.Melee] run data modify storage api: Argument.Fluctuation set value 15
     execute as @s[tag=!1JQ.Melee] run function api:mp/fluctuation

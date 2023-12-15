@@ -7,6 +7,7 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
     tag @s remove 1JM.InCooldown
+    stopsound @a * entity.item.break
 
 # 居合抜き
     scoreboard players set @s 1JM.IaiTime 3
