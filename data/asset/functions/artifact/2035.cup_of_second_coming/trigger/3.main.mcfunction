@@ -9,3 +9,4 @@
 
 # ここから先は神器側の効果の処理を書く
     execute as @e[type=armor_stand,tag=CursedArtifact,tag=DispelledCursedArtifact,tag=!Extended.ArtifactUnsealed,distance=..10,limit=1] at @s run function asset_manager:island/extended/unseal
+    tellraw @a {"text":"浄化された天使が力を取り戻し、再び戦うことができるようになった。","color":"green"}
