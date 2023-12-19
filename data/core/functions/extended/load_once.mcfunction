@@ -11,3 +11,8 @@
     tellraw @a [{"text":""}]
     tellraw @a [{"text":"Thanks for installation!"}]
     tellraw @a [{"text":"================================","color":"gold"}]
+
+#> scoreboard
+    # island manager
+        scoreboard players set $Island Global 0
+        scoreboard players set $IslandTotal Global 50
