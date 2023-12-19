@@ -13,14 +13,6 @@
 #   api:global_vars/difficulty/**
     #declare score_holder $Difficulty
 
-#> Global Vars - Islands
-# @within function
-#   core:load_once
-#   asset_manager:island/dispel/successful
-#   lib:message/common/dispel_island
-    #declare score_holder $Islands
-    #declare score_holder $IslandsTotal
-
 #> DeathTag
 # @public
     #declare tag Death
