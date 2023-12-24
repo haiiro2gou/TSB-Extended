@@ -14,13 +14,13 @@
     #declare score_holder $1K4.Count
 
 # メイン処理
-    execute store result score $1K4.Count Temporary run data get storage asset:context Items.mainhand.tag.TSB.TSBE.EquipCount 1.0
+    execute store result score $1K4.Count Temporary run data get storage asset:context Items.mainhand.tag.TSB.Field.EquipCount 1.0
     scoreboard players remove $1K4.Count Temporary 1
     execute if score $1K4.Count Temporary matches 1.. store result storage api: Argument.ID int 1 run data get storage asset:context id.mainhand
     execute if score $1K4.Count Temporary matches 1.. store result storage asset:artifact DataExtension.EquipCount int 1 run scoreboard players get $1K4.Count Temporary
     execute unless score $1K4.Count Temporary matches 1.. run data modify storage api: Argument.ID set value 2019
     execute store result storage asset:artifact RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
-    execute store result storage asset:artifact RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
+    execute store result storage asset:artifact RemainingCountMax int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMax
     function api:artifact/replace/from_id
     data modify storage asset:context Items.mainhand set from entity @s SelectedItem
 

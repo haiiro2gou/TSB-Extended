@@ -14,5 +14,5 @@
     particle cloud ~ ~1 ~ 0.1 0.1 0.1 0.1 10
     data modify storage api: Argument.ID set value 2019
     execute store result storage asset:artifact RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
-    execute store result storage asset:artifact RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
+    execute store result storage asset:artifact RemainingCountMax int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMax
     function api:artifact/replace/from_id

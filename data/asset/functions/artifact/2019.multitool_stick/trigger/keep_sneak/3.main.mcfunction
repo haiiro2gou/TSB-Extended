@@ -35,7 +35,7 @@
     execute store result score $1K3.ToolBase Temporary run data get storage asset:context Items.mainhand.tag.TSB.ID
     execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary store result storage api: Argument.ID int 1 run scoreboard players get $1K3.Tool Temporary
     execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary store result storage asset:artifact RemainingCount int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
-    execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary store result storage asset:artifact RemainingCountMAX int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMAX
+    execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary store result storage asset:artifact RemainingCountMax int 1 run data get storage asset:context Items.mainhand.tag.TSB.RemainingCountMax
     execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary run data modify storage asset:artifact DataExtension set value {EquipCount:2}
     execute unless score $1K3.Tool Temporary = $1K3.ToolBase Temporary run function api:artifact/replace/from_id
 

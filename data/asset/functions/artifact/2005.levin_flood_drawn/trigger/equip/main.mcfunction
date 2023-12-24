@@ -14,7 +14,7 @@
     playsound minecraft:entity.generic.drink player @a ~ ~ ~ 0.5 0.7
 
 # 装備回数チェック
-    execute store result score $1JP.Count Temporary run data get storage asset:context Items.mainhand.tag.TSB.TSBE.EquipCount 1.0
+    execute store result score $1JP.Count Temporary run data get storage asset:context Items.mainhand.tag.TSB.Field.EquipCount 1.0
     scoreboard players remove $1JP.Count Temporary 1
     scoreboard players set $1JP.ID Temporary 2005
     execute unless score $1JP.Count Temporary matches 1.. run scoreboard players remove $1JP.ID Temporary 1

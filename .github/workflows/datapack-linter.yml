@@ -25,7 +25,6 @@ jobs:
           path: TSB-master
           sparse-checkout: |
             NaturalMergeSort
-            OhMyDat
 
       - name: Deploy Dependencies
         run: |
