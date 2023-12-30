@@ -1,44 +1,42 @@
 name: lint-datapack
 on:
-  push:
-  workflow_dispatch:
+    push:
+    pull_request:
+    workflow_dispatch:
 jobs:
-  lint:
-    name: lint
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    steps:
-      - name: Checkout Dependencies - 1
-        uses: actions/checkout@v3
-        with:
-          repository: haiiro2gou/TSB-Patcher
-          ref: refs/tags/v0.0.4-alpha
+    lint:
+        name: lint
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout Dependencies - 1
+            uses: actions/checkout@v3
+            with:
+                repository: haiiro2gou/TSB-Patcher
+                ref: refs/tags/v1
 
-      - name: Checkout Dependencies - 2
-        uses: actions/checkout@v3
-        with:
-          repository: ProjectTSB/TheSkyBlessing
-          ref: refs/tags/v0.1.6
-          path: TSB-master
-          sparse-checkout: |
-            NaturalMergeSort
-            OhMyDat
-            ScoreToHealth
-          sparse-checkout-cone-mode: false
+          - name: Checkout Dependencies - 2
+            uses: actions/checkout@v3
+            with:
+                repository: ProjectTSB/TheSkyBlessing
+                ref: refs/tags/v0.1.6
+                path: TSB-master
+                sparse-checkout: |
+                    NaturalMergeSort
+                sparse-checkout-cone-mode: false
 
-      - run: |
-          mv -f TSB-master/** ../TSB-Extended
-          rm -rf TSB-master/
+          - run: |
+                mv -f TSB-master/** ../TSB-Extended
+                rm -rf TSB-master/
 
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          path: TSB-Extended
+          - name: Checkout
+            uses: actions/checkout@v3
+            with:
+                path: TSB-Extended
 
-      - name: Test
-        uses: ChenCMD/datapack-linter@v1
-        with:
-          outputDefine: public
-          notOutputSuccess: true
-          ignoreLintPathPattern: |
-            animated_java:**
+          - name: Test
+            uses: ChenCMD/datapack-linter@v1
+            with:
+                outputDefine: public
+                notOutputSuccess: true
+                ignoreLintPathPattern: |
+                    animated_java:**
