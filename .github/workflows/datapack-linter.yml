@@ -1,44 +1,44 @@
 name: lint-datapack
 on:
-  push:
-  pull_request:
-  workflow_dispatch:
+    push:
+    pull_request:
+    workflow_dispatch:
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
     cancel-in-progress: true
 jobs:
-  lint:
-    name: lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Dependencies - 1
-        uses: actions/checkout@v3
-        with:
-          repository: haiiro2gou/TSB-Patcher
-          ref: v1.0.0
+    lint:
+        name: lint
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout Dependencies - 1
+            uses: actions/checkout@v4
+            with:
+                repository: haiiro2gou/TSB-Patcher
+                ref: v1
 
-      - name: Checkout Dependencies - 2
-        uses: actions/checkout@v3
-        with:
-          repository: ProjectTSB/TheSkyBlessing
-          ref: refs/tags/v0.1.6
-          path: TSB-master
-          sparse-checkout: |
-            NaturalMergeSort
+          - name: Checkout Dependencies - 2
+            uses: actions/checkout@v4
+            with:
+                repository: ProjectTSB/TheSkyBlessing
+                ref: refs/tags/v0.1.6
+                path: TSB-master
+                sparse-checkout: |
+                    NaturalMergeSort
+                sparse-checkout-cone-mode: false
 
-      - name: Deploy Dependencies
-        run: |
-          mv -f TSB-master/** ../TSB-Extended
-          rm -rf TSB-master/
+          - run: |
+                mv -f TSB-master/** ../TSB-Extended
+                rm -rf TSB-master/
 
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-        with:
-          path: TSB-Extended
+          - name: Checkout Repository
+            uses: actions/checkout@v4
+            with:
+                path: TSB-Extended
 
-      - name: Datapack Linter
-        uses: ChenCMD/datapack-linter@v2
-        with:
-          muteSuccessResult: true
-          ignoreLintPathPattern: |
-            animated_java:**
+          - name: Datapack Linter
+            uses: ChenCMD/datapack-linter@v2
+            with:
+                muteSuccessResult: true
+                ignoreLintPathPattern: |
+                    animated_java:**
