@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/2035.cup_of_second_coming/give/1.trigger",
+        "asset:artifact/2033.soul_charm/give/1.trigger",
         "asset:artifact/2005.levin_flood_drawn/give/1.trigger",
         "asset:artifact/2004.levin_flood_sheathed/give/1.trigger",
         "asset:artifact/2025.multitool_empty/give/1.trigger",

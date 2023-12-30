@@ -10,8 +10,8 @@
 # 他にアイテム等確認する場合はここに書く
     # 火薬の所持チェック
         execute store result score $1JT.GunpowderCount Temporary run clear @s gunpowder 0
-        execute as @a[tag=!DevPrivilege] if score $1JT.GunpowderCount Temporary matches 0 run tag @s remove CanUsed
-        execute as @a[tag=!DevPrivilege] if score $1JT.GunpowderCount Temporary matches 0 run function lib:message/artifact/dont_have_require_items
+        execute as @a[tag=!DevPrivilege] unless score $1JT.GunpowderCount Temporary matches 2.. run tag @s remove CanUsed
+        execute as @a[tag=!DevPrivilege] unless score $1JT.GunpowderCount Temporary matches 2.. run function lib:message/artifact/dont_have_require_items
         scoreboard players reset $1JT.GunpowderCount Temporary
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する

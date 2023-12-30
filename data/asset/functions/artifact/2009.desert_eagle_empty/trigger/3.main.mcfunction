@@ -7,9 +7,10 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     execute as @s[tag=1JT.Main] run function asset:artifact/common/use/mainhand
     execute as @s[tag=1JT.Off] run function asset:artifact/common/use/offhand
+    stopsound @a * entity.item.break
 
 # 火薬消し
-    clear @s gunpowder 1
+    clear @s gunpowder 2
 
 # リロードする
     stopsound @a * entity.item.break

@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{TSB:{ID:2002}}"
+                            "tag": "{TSB:{ID:2003}}"
                         }
                     ]
                 }
@@ -21,7 +21,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "entities/blaze"
+                    "name": "entities/vex"
                 }
             ]
         }

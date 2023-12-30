@@ -18,7 +18,7 @@
 
 # 最大MP -25%
     data modify storage api: Argument set value {Amount:-0.25d,UUID:[I;1,1,2012,5],Operation:"multiply_base"}
-    function api:modifier/mp_max/add
+    function api:modifier/max_mp/add
 
 # 魔法攻撃力 +10%
     data modify storage api: Argument set value {Amount:0.10d,UUID:[I;1,1,2012,5],Operation:"multiply_base"}
