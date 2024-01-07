@@ -12,8 +12,6 @@
         stopsound @s * entity.item.break
         tellraw @s [{"text":"<"},{"selector":"@s"},{"text":"> その点トッポってすげぇよな、最後までチョコたっぷりだもん。"}]
     # 処理
-        function api:data_get/health
-        execute store result storage api: Argument.Heal double 0.01 run data get storage api: Health 50
-        function api:heal/modifier
-        function api:heal/
-        function api:heal/reset
+        function api:mp/get_max
+        execute store result storage api: Argument.Fluctuation double 0.50 run data get storage api: MaxMP 1
+        function api:mp/fluctuation
