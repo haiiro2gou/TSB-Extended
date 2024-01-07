@@ -9,7 +9,6 @@
 # 自傷する
     execute unless score @s 1JU.CoolTime matches 70 store result storage api: Argument.Damage float 0.0120 run attribute @s generic.max_health get 100
     execute if score @s 1JU.CoolTime matches 70 store result storage api: Argument.Damage float 0.00150 run attribute @s generic.max_health get 100
-    tellraw @a {"nbt":"Argument.Damage","storage":"api:"}
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
     data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは世界の深淵に呑まれた。","with":[{"selector":"@s"}]}]']
