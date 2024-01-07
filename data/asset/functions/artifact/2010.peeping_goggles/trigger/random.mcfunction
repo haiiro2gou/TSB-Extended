@@ -12,4 +12,4 @@
     scoreboard players operation $1JU.Base Temporary %= $65536 Const
 
 # 値を返す
-    scoreboard players get $1JU.Base Temporary
+    return run scoreboard players get $1JU.Base Temporary

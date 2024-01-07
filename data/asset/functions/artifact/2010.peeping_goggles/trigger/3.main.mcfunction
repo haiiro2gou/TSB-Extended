@@ -51,4 +51,3 @@
     scoreboard players reset $1JU.Carry Temporary
     scoreboard players reset $1JU.Length Temporary
     scoreboard players reset $1JU.Rarity Temporary
-    data remove storage lib: Array
