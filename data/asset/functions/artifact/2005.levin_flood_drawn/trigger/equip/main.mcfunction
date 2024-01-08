@@ -20,7 +20,7 @@
     execute unless score $1JP.Count Temporary matches 1.. run scoreboard players remove $1JP.ID Temporary 1
     execute store result storage api: Argument.ID int 1 run scoreboard players get $1JP.ID Temporary
     data modify storage api: Argument.Slot set value "mainhand"
-    execute if score $1JP.Count Temporary matches 1.. store result storage asset:artifact DataExtension.EquipCount int 1 run scoreboard players get $1JP.Count Temporary
+    execute if score $1JP.Count Temporary matches 1.. store result storage asset:artifact Field.EquipCount int 1 run scoreboard players get $1JP.Count Temporary
     function api:artifact/replace/from_id
     data modify storage asset:context Items.mainhand set from entity @s SelectedItem
 
