@@ -18,7 +18,7 @@
     stopsound @a * entity.item.break
     data modify storage api: Argument.ID set value 2005
     data modify storage api: Argument.Slot set value "mainhand"
-    data modify storage asset:artifact DataExtension.EquipCount set value 2
+    data modify storage asset:artifact Field.EquipCount set value 2
     function api:artifact/replace/from_id
 
 # 魔法陣召喚
