@@ -2,7 +2,7 @@
 #
 # #load時に毎回実行される処理群
 #
-# @within tag/function minecraft:load
+# @within tag/function core:patcher/load
 
 
 # ⚠️ リリース時のみtrueにすること。 これをtrueにした場合、ワールドに不可逆的な登録処理が発生します。 ⚠️
