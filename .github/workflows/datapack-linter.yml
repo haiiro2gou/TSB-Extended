@@ -15,7 +15,7 @@ jobs:
             uses: actions/checkout@v4
             with:
                 repository: haiiro2gou/TSB-Patcher
-                ref: v1
+                ref: master
 
           - name: Checkout Dependencies - 2
             uses: actions/checkout@v4
