@@ -26,6 +26,7 @@
     # 属性
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Water"
+        data modify storage api: Argument.DamageType set value "Projectile"
     # ダメージ
         execute as @a if score @s UserID = @e[type=marker,tag=1JL.This,distance=..1,limit=1] 1JL.UserID run function api:damage/modifier
         execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,tag=!Object,distance=..5] run function api:damage/
