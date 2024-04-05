@@ -24,8 +24,9 @@
     # 与えるダメージ = 400~800
         scoreboard players add $RandomDamage Temporary 400
         execute store result storage api: Argument.Damage float 1.0 run scoreboard players get $RandomDamage Temporary
-    # 第一属性
+    # 属性
         data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.DamageType set value "Projectile"
     # ダメージ
         function api:damage/modifier
         execute as @e[tag=1JS.LandingTarget] at @s run function api:damage/
