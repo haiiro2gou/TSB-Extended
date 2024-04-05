@@ -10,20 +10,9 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute unless data storage asset:context id.all{head:2011,chest:2012,legs:2013,feet:2014} run particle minecraft:end_rod ~ ~1 ~ 0.3 0.3 0.3 0.3 15
-    execute unless data storage asset:context id.all{head:2011,chest:2012,legs:2013,feet:2014} run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.5 2
-
-# 最大体力 -25%
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-07DC00000005 "MaxHealthDown" -0.25 multiply_base
-
-# 最大MP -25%
-    data modify storage api: Argument set value {Amount:-0.25d,UUID:[I;1,1,2012,5],Operation:"multiply_base"}
-    function api:modifier/max_mp/add
-
-# 魔法攻撃力 +10%
-    data modify storage api: Argument set value {Amount:0.10d,UUID:[I;1,1,2012,5],Operation:"multiply_base"}
-    function api:modifier/attack/magic/add
+    execute unless data storage asset:context id{head:2011,chest:2012,legs:2013,feet:2014} run particle minecraft:end_rod ~ ~1 ~ 0.3 0.3 0.3 0.3 15
+    execute unless data storage asset:context id{head:2011,chest:2012,legs:2013,feet:2014} run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.5 2
 
 # 他部位チェック
-    execute if data storage asset:context id.all{head:2011,chest:2012,legs:2013,feet:2014} run function asset:artifact/2011.crystal_headgear/trigger/fullset/
-    execute if data storage asset:context id.all{chest:2012,legs:2013} run function asset:artifact/2011.crystal_headgear/trigger/dual_armor/
+    execute if data storage asset:context id{head:2011,chest:2012,legs:2013,feet:2014} run function asset:artifact/2011.crystal_headgear/trigger/fullset/
+    execute if data storage asset:context id{chest:2012,legs:2013} run function asset:artifact/2011.crystal_headgear/trigger/dual_armor/

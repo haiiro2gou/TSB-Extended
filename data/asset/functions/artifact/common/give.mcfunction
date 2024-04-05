@@ -9,18 +9,26 @@
 #   Lore : TextComponent[]
 #   RemainingCount? : int
 #   RemainingCountMax? : int
-#   Slot : Slot
-#   Trigger : Trigger
-#   Condition? : TextComponent
-#   AttackInfo? : Component
-#   MPCost : int
-#   MPRequire? : int
-#   CostText? : TextComponent
-#   LocalCooldown? : int
-#   SpecialCooldown? : int
-#   DisableCooldownMessage? : boolean
-#   DisableMPMessage? : boolean
+#   Triggers : Component[]
+#   ├ Slot : Slot
+#   ├ Trigger : Trigger
+#   ├ Condition? : TextComponent
+#   ├ AttackInfo? : Component
+#   ├ MPCost : int
+#   ├ MPRequire? : int
+#   ├ CostText? : TextComponent
+#   ├ LocalCooldown? : int
+#   ├ SpecialCooldown? : int
+#   ├ DisableCooldownMessage? : boolean
+#   └ DisableMPMessage? : boolean
 #   CanUsedGod : God[]
+#   EquipID? : int
+#   Modifiers : Component[]
+#   ├ Type : string
+#   ├ Slot : Slot
+#   ├ RequiredParts? : int
+#   ├ Amount : double
+#   └ Operation : "add" | "multiply_base" | "multiply"
 #   Field? : Component
 #   CustomNBT? : Component
 # @output item 神器
@@ -32,6 +40,8 @@
 
 # Triggerの並列化
     execute unless data storage asset:artifact Triggers[0] run function asset:artifact/common/trigger/migrate
+# AttributeModifierの内部化
+    execute if data storage asset:artifact CustomNBT.AttributeModifiers[0] run function asset:artifact/common/modifier/migrate
 
 # storage検証
     execute unless data storage asset:artifact ID run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"引数が足りません"},{"text":" ID","color":"red"}]
@@ -40,11 +50,18 @@
     execute unless data storage asset:artifact Lore run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"引数が足りません"},{"text":" Lore","color":"red"}]
     # execute unless data storage asset:artifact RemainingCount run
     execute unless data storage asset:artifact RemainingCountMax if data storage asset:artifact RemainingCount run data modify storage asset:artifact RemainingCountMax set from storage asset:artifact RemainingCount
-    execute unless data storage asset:artifact Triggers[0] run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"引数が足りません"},{"text":" Triggers","color":"red"}]
+    # execute unless data storage asset:artifact Triggers[0] run
     execute if data storage asset:artifact Triggers[0] run data modify storage asset:temp Triggers set from storage asset:artifact Triggers
     execute if data storage asset:artifact Triggers[0] run function asset:artifact/common/trigger/check
     execute if data storage asset:artifact Triggers[0] run data remove storage asset:temp Triggers
     execute unless data storage asset:artifact CanUsedGod run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"引数が足りません"},{"text":" CanUsedGod","color":"red"}]
+    # execute unless data storage asset:artifact EquipID run
+    # execute unless data storage asset:artifact Modifiers[0] run
+    execute if data storage asset:artifact Modifiers[0] run data modify storage asset:temp Modifiers set from storage asset:artifact Modifiers
+    execute if data storage asset:artifact Modifiers[0] run function asset:artifact/common/modifier/check
+    execute if data storage asset:artifact Modifiers[0] run data remove storage asset:temp Modifiers
+    # execute unless data storage asset:artifact Field run
+    # execute unless data storage asset:artifact CustomNBT run
 # 各データ設定
     function asset_manager:artifact/create/set_data
 # 神器排出
@@ -69,5 +86,7 @@
     data remove storage asset:artifact RemainingCountMax
     data remove storage asset:artifact Triggers
     data remove storage asset:artifact CanUsedGod
+    data remove storage asset:artifact EquipID
+    data remove storage asset:artifact Modifiers
     data remove storage asset:artifact Field
     data remove storage asset:artifact CustomNBT

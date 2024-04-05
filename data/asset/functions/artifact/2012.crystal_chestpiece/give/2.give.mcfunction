@@ -52,6 +52,11 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ['Flora','Wi-ki','Rumor']
+# ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"maxHealth",Slot:"chest",Amount:-0.25d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"maxMP",Slot:"chest",Amount:-0.25d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attackMagic",Slot:"chest",Amount:0.10d,Operation:"multiply_base"}
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {display:{color:16577535},HideFlags:100,Unbreakable:1b}
 

@@ -8,6 +8,9 @@
 #   asset:artifact/2008.desert_eagle/trigger/tick/
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
+    execute if data storage asset:context id{mainhand:2008,offhand:2008} run tag @s add 1JS.Double
+    execute if data storage asset:context id{mainhand:2008} as @s[tag=!1JS.Double] run tag @s add 1JS.Main
+    execute if data storage asset:context id{offhand:2008} as @s[tag=!1JS.Double] run tag @s add 1JS.Off
     execute as @s[tag=!1JS.Off] run function asset:artifact/common/check_condition/mainhand
     execute as @s[tag=1JS.Off] run function asset:artifact/common/check_condition/offhand
 # 他にアイテム等確認する場合はここに書く
@@ -19,3 +22,8 @@
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/2008.desert_eagle/trigger/3.main
+
+# リセット
+    tag @s remove 1JS.Double
+    tag @s remove 1JS.Main
+    tag @s remove 1JS.Off
