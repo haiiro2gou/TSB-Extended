@@ -11,25 +11,11 @@ jobs:
         name: lint
         runs-on: ubuntu-latest
         steps:
-          - name: Checkout Dependencies - 1
+          - name: Checkout Dependencies
             uses: actions/checkout@v4
             with:
                 repository: haiiro2gou/TSB-Patcher
                 ref: master
-
-          - name: Checkout Dependencies - 2
-            uses: actions/checkout@v4
-            with:
-                repository: ProjectTSB/TheSkyBlessing
-                ref: refs/tags/v0.1.6
-                path: TSB-master
-                sparse-checkout: |
-                    NaturalMergeSort
-                sparse-checkout-cone-mode: false
-
-          - run: |
-                mv -f TSB-master/** ../TSB-Extended
-                rm -rf TSB-master/
 
           - name: Checkout Repository
             uses: actions/checkout@v4
