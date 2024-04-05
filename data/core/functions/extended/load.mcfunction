@@ -4,7 +4,6 @@
 #
 # @within tag/function core:patcher/load
 
-
 # ⚠️ リリース時のみtrueにすること。 これをtrueにした場合、ワールドに不可逆的な登録処理が発生します。 ⚠️
     data modify storage global Extended.IsProduction set value false
 

@@ -8,7 +8,7 @@
 
 #> Val
 # @private
-#declare score_holder $4tInterval
+    #declare score_holder $4tInterval
 
 # デバッグ用TickRate操作システム
     execute if data storage global {IsProduction:0b} if score $AwaitTime Global matches -2147483648..2147483647 run function debug:tps/watch
@@ -61,6 +61,8 @@
     # MobAsset処理
         execute as @e[tag=AllowProcessingCommonTag] at @s run function asset_manager:mob/common_tag/
         execute as @e[tag=AssetMob] at @s run function asset_manager:mob/tick/
+    # 環境ダメージ処理
+        execute as @e[type=#lib:living,type=!player,tag=AlreadyInitMob,nbt=!{Health:512f}] run function mob_manager:environmental_damage
 
 # エフェクト処理
     execute as @e[type=#lib:living,tag=HasAssetEffect] at @s run function asset_manager:effect/tick

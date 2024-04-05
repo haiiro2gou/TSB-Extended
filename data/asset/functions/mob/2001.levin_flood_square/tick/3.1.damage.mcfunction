@@ -22,16 +22,16 @@
         scoreboard players operation $RandomDamage Temporary %= $101 Temporary
     # 与ダメージ
         scoreboard players add $RandomDamage Temporary 30
-        execute store result storage lib: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
+        execute store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
     # 属性
-        data modify storage lib: Argument.AttackType set value "Magic"
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.ElementType set value "Water"
     # ダメージ
-        execute as @a if score @s UserID = @e[type=marker,tag=1JL.This,distance=..1,limit=1] 1JL.UserID run function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,tag=!Object,distance=..5] run function lib:damage/
+        execute as @a if score @s UserID = @e[type=marker,tag=1JL.This,distance=..1,limit=1] 1JL.UserID run function api:damage/modifier
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,tag=!Object,distance=..5] run function api:damage/
 
 # リセット
     tag @s remove 1JL.This
     scoreboard players reset $101 Temporary
     scoreboard players reset $RandomDamage Temporary
-    function lib:damage/reset
+    function api:damage/reset
